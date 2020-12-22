@@ -1,0 +1,14 @@
+.button {
+    padding: 20px;
+    background: linear-gradient($secondary-color, $primary-color);
+    border-radius: 30px;
+
+    .button__text {
+        color: white;
+    }
+}
+
+//quand un bouton est sous un paragraphe, on ajoute un margin top
+ p + .button {
+    margin-top: 30px;
+}

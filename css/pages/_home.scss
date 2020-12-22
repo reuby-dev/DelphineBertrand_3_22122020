@@ -4,15 +4,24 @@
     background-color: $grey-medium;
     padding: 20px;
     text-align: center;
-    
+
     input {
         background-color: $grey-medium;
         border: none;
         margin-left: 20px;
         width: 105px;
-        letter-spacing: -1px;
         &::placeholder {
             color: black;
         }
+    }
+}
+
+.presentation {
+    background-color: $grey-light;
+    padding: 45px 20px 55px 20px;
+    text-align: center;
+
+    .presentation__text {
+        font-weight: $font-weight-light;
     }
 }

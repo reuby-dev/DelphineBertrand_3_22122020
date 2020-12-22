@@ -314,6 +314,7 @@ input, button {
   outline: 0; }
 
 button {
+  border: none;
   cursor: pointer; }
 
 /**
@@ -323,6 +324,9 @@ body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 1rem; }
+
+h1 {
+  margin-top: 0; }
 
 h3 {
   margin-top: 0;
@@ -338,6 +342,16 @@ p {
   text-align: center;
   box-shadow: 0px 3px 5px #aaa; }
 
+.button {
+  padding: 20px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 30px; }
+  .button .button__text {
+    color: white; }
+
+p + .button {
+  margin-top: 30px; }
+
 /*Section localisation*/
 .localisation {
   background-color: #eaeaea;
@@ -347,9 +361,15 @@ p {
     background-color: #eaeaea;
     border: none;
     margin-left: 20px;
-    width: 105px;
-    letter-spacing: -1px; }
+    width: 105px; }
     .localisation input::placeholder {
       color: black; }
+
+.presentation {
+  background-color: #f6f6f6;
+  padding: 45px 20px 55px 20px;
+  text-align: center; }
+  .presentation .presentation__text {
+    font-weight: 300; }
 
 /*# sourceMappingURL=style.css.map */
