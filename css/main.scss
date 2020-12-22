@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+//1. configuration et utilitaires
+@import 
+    './utils/variables',
+    './utils/functions',
+    './utils/mixins',
+    './utils/placeholders';
+
+//2. Vendors
+@import 
+    './vendors/normalize';
+
+//3. Base
+@import 
+    './base/base',
+    './base/typography';
+
+//4. Layout-related sections
+@import 
+    './layouts/header',
+    './layouts/footer',
+    './layouts/container';
+
+//5. Components
+@import
+    './components/buttons',
+    './components/cards';
+
+//6. Page-specific styles
+
+//7. Themes
