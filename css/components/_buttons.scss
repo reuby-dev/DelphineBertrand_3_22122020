@@ -26,6 +26,7 @@
     background-color: $grey-light;
     border-radius: 20px;
     box-shadow: $shadow;
+    text-align: left;
     margin-bottom: 20px;
     margin-left: $step__round-size /2;
     
@@ -45,6 +46,7 @@
 
 .button-step__round {
     position: absolute;
+    text-align: center;
     width: $step__round-size;
     height: $step__round-size;
     border-radius: 100%;

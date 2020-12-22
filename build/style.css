@@ -324,10 +324,14 @@ button {
 body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  font-size: 1rem; }
+  font-size: 0.875rem; }
 
 h1 {
   margin-top: 0; }
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 30px; }
 
 h3 {
   margin-top: 0;
@@ -365,6 +369,7 @@ p {
   background-color: #f6f6f6;
   border-radius: 20px;
   box-shadow: 0px 5px 10px #aaa;
+  text-align: left;
   margin-bottom: 20px;
   margin-left: 12.5px; }
   .button-step:hover {
@@ -379,6 +384,7 @@ p {
 
 .button-step__round {
   position: absolute;
+  text-align: center;
   width: 25px;
   height: 25px;
   border-radius: 100%;
