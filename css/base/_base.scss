@@ -5,9 +5,16 @@
 html {
     box-sizing: border-box;
   }
-  
-  /* Basic styles for links */
+
+
   a {
     text-decoration: none;
   }
   
+  input, button {
+    outline: 0;
+  }
+
+  button {
+    cursor: pointer;
+  }

@@ -1,0 +1,18 @@
+/*Section localisation*/
+
+.localisation {
+    background-color: $grey-medium;
+    padding: 20px;
+    text-align: center;
+    
+    input {
+        background-color: $grey-medium;
+        border: none;
+        margin-left: 20px;
+        width: 105px;
+        letter-spacing: -1px;
+        &::placeholder {
+            color: black;
+        }
+    }
+}
