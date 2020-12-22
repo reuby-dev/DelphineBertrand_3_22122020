@@ -27,36 +27,41 @@
     <section class="presentation">
         <h1>Réservez le menu qui vous convient</h1>
         <p class="presentation__text">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-        <button class="button">
-            <span class="button__text">Explorer nos restaurants</span>
+        <button class="button-active">
+            <span class="button-active__text">Explorer nos restaurants</span>
         </button>
     </section>
 
-    <section>
+    <section class="function">
         <h2>Fonctionnement</h2>
-        <button>
-            <i>T</i>
-            <span>Choisissez un restaurant</span>
-        </button>
-        <button>
-            <i>T</i>
-            <span>Composez votre meny</span>
-        </button>
-        <button>
-            <i>T</i>
-            <span>Dégustez au restaurant</span>
-        </button>
+        <div class="function__container">
+            <button class="button-step">
+                <div class="button-step__round">1</div>
+                <i class="fas fa-mobile-alt fa-lg button-step__icon"></i>
+                <span class="button-step__text">Choisissez un restaurant</span>
+            </button>
+            <button class="button-step">
+                <div class="button-step__round">2</div>
+                <i class="fas fa-list-ul fa-lg button-step__icon"></i>
+                <span class="button-step__text">Composez votre menu</span>
+            </button>
+            <button class="button-step button-step--active">
+                <div class="button-step__round">3</div>
+                <i class="fas fa-store fa-lg button-step__icon button-step__icon--active"></i>
+                <span class="button-step__text">Dégustez au restaurant</span>
+            </button>
+        </div>
     </section>
 
     <section>
         <h2>Restaurants</h2>
 
         <div>
-            <img src="images/restaurants/a_la_francaise.jpg" alt="restaurant a la francaise">
+            <img src="#" alt="restaurant a la francaise">
             <div>
                 <div>
-                <h3>La palette du gout</h3>
-                <p>Ménilmontant</p>
+                    <h3>La palette du gout</h3>
+                    <p>Ménilmontant</p>
                 </div>
                 <i>T</i>
             </div>
@@ -65,8 +70,10 @@
 
     <footer>
         <img src="images/logo/ohmyfood.svg" alt="logo ohmyfood">
-        <i>T</i> <p>Proposer un restaurant</p>
-        <i>T</i> <p>Devenir partenaires</p>
+        <i>T</i>
+        <p>Proposer un restaurant</p>
+        <i>T</i>
+        <p>Devenir partenaires</p>
         <p>Mentions légales</p>
         <p>Contact</p>
     </footer>

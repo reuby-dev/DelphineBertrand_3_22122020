@@ -23,5 +23,15 @@
 
     .presentation__text {
         font-weight: $font-weight-light;
+        margin-bottom: 30px;
     }
+}
+
+.function {
+    padding: 50px 20px;
+}
+
+.function__container {
+    display: flex;
+    flex-wrap: wrap;
 }
