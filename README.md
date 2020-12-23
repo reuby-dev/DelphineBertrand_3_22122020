@@ -9,9 +9,9 @@ Ohmyfood! est une entreprise de commande de repas en ligne. Le concept permet au
 La cible étant les personnes connectées et pressées, le site est développé en utilisant l’approche mobile-first. Pour cette raison, seules des maquettes mobiles sont réalisées. Sur tablette et desktop, le site doit s’adapter, mais ces supports n’étant pas prioritaires, leur mise en page est libre.
 
 # Contraintes techniques
-Le développement devra se faire en CSS, sans JavaScript.
-Aucun framework ne devra être utilisé.
-Aucun code CSS ne devra être appliqué via un attribut style dans une balise HTML.
+Le développement doit se faire en CSS, sans JavaScript.
+Aucun framework ne doit être utilisé.
+Aucun code CSS ne doit être appliqué via un attribut style dans une balise HTML.
 
 # Livrables attendus
 Contenu des pages :
