@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Oh my food</title>
+    <title>Oh my food - Choisissez votre menu avant d'arriver au restaurant pour gagner du temps</title>
     <link rel="stylesheet" href="style.css">
     <!--Viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +11,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <!--Font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="images/logo/favicon.png">
 </head>
 
 <body>
     <header class="header">
-        <img src="images/logo/ohmyfood.svg" alt="logo ohmyfood">
+        <p><strong class="logo">ohmyfood</strong></p>
     </header>
 
     <section class="localisation">
@@ -59,31 +61,67 @@
             <div class="restaurant__presentation">
 
                 <div class="card-restaurant">
-                    <div class="card-restaurant__figure">
-                        <img src="images/restaurants/la_palette_du_gout.jpg" alt="restaurant a la francaise"
-                            class="card-restaurant__img">
-                    </div>
-                    <div class="card-restaurant__body">
-                        <div class="card-restaurant__text">
-                            <h3>La palette du gout</h3>
-                            <p>Ménilmontant</p>
+                    <a href="#">
+                        <div class="card-restaurant__figure">
+                            <img src="images/restaurants/la_palette_du_gout.jpg" alt="la palette du gout"
+                                class="card-restaurant__img">
                         </div>
-                        <i class="far fa-heart fa-2x card-restaurant__icon"></i>
-                    </div>
+                        <div class="card-restaurant__body">
+                            <div class="card-restaurant__text">
+                                <h3>La palette du gout</h3>
+                                <p>Ménilmontant</p>
+                            </div>
+                            <i class="far fa-heart fa-2x card-restaurant__icon"></i>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="card-restaurant">
-                    <div class="card-restaurant__figure">
-                        <img src="images/restaurants/la_palette_du_gout.jpg" alt="restaurant a la francaise"
-                            class="card-restaurant__img">
-                    </div>
-                    <div class="card-restaurant__body">
-                        <div class="card-restaurant__text">
-                            <h3>La palette du gout</h3>
-                            <p>Ménilmontant</p>
+                    <a href="#">
+                        <div class="card-restaurant__figure">
+                            <img src="images/restaurants/la_note_enchantee.jpg" alt="la note enchantée"
+                                class="card-restaurant__img">
                         </div>
-                        <i class="far fa-heart fa-2x card-restaurant__icon"></i>
-                    </div>
+                        <div class="card-restaurant__body">
+                            <div class="card-restaurant__text">
+                                <h3>La note enchantée</h3>
+                                <p>Charonne</p>
+                            </div>
+                            <i class="far fa-heart fa-2x card-restaurant__icon"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-restaurant">
+                    <a href="#">
+                        <div class="card-restaurant__figure">
+                            <img src="images/restaurants/a_la_francaise.jpg" alt="a la francaise"
+                                class="card-restaurant__img">
+                        </div>
+                        <div class="card-restaurant__body">
+                            <div class="card-restaurant__text">
+                                <h3>A la française</h3>
+                                <p>Cité rouge</p>
+                            </div>
+                            <i class="far fa-heart fa-2x card-restaurant__icon"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-restaurant">
+                    <a href="#">
+                        <div class="card-restaurant__figure">
+                            <img src="images/restaurants/le_delice_des_sens.jpg" alt="le délice des sens"
+                                class="card-restaurant__img">
+                        </div>
+                        <div class="card-restaurant__body">
+                            <div class="card-restaurant__text">
+                                <h3>Le délice des sens</h3>
+                                <p>Folie-Méricourt</p>
+                            </div>
+                            <i class="far fa-heart fa-2x card-restaurant__icon"></i>
+                        </div>
+                    </a>
                 </div>
 
             </div>
@@ -91,7 +129,7 @@
     </section>
 
     <footer>
-        <img src="images/logo/ohmyfood.svg" alt="logo ohmyfood">
+        <p><strong class="logo logo--footer">ohmyfood</strong></p>
         <i>T</i>
         <p>Proposer un restaurant</p>
         <i>T</i>

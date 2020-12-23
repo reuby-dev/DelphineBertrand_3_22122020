@@ -6,7 +6,7 @@
     background-color: white;
     border-radius: 15px;
     overflow: hidden;
-    min-width: 220px;
+    min-width: 225px;
     height: 250px;
     box-shadow: $blur-shadow;
     margin-bottom: 20px;
@@ -22,10 +22,18 @@
     &__body {
         display: flex;
         padding: 20px 25px 20px 15px;
+
+        .card-restaurant__icon {
+
+            &:hover {
+
+            }
+        }
     }
 }
 
 
+//si l'icone est à droite d'un texte, ajouter un margin left)
 .card-restaurant__text + .card-restaurant__icon {
     margin-left: auto;
 }
