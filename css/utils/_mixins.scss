@@ -1,13 +1,13 @@
-/*conteneur taille max du site*/
+//conteneur taille max du site
 
-@mixin max-container ($width-max: $max-width) {
-    max-width: $width-max;
+@mixin max-container () {
+    max-width: 1400px;
     margin: auto;
     padding-left: 20px;
     padding-right: 20px;
    }
 
-/*comportement des images dans leur div*/
+//comportement des images dans leur conteneur
 
 @mixin img-size () {
     width: 100%;

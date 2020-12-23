@@ -1,5 +1,4 @@
-/*bouton qui appelle à l'action:
- rechercher un resto, commander...*/
+//bouton qui appelle à l'action: rechercher un resto, commander...
 
 .button-active {
     padding: 20px;
@@ -17,7 +16,7 @@
     }
 }
 
-/*bouton avec étapes*/
+//bouton avec étapes
 
 .button-step {
     flex-grow: 1;
@@ -38,6 +37,7 @@
 
 .button-step--active {
     background-color: #f5edff;
+    
     &:hover {
         transition-duration: 0.5s;
         background-color: #eddeff;
@@ -73,8 +73,7 @@
     color: $primary-color;
 }
 
-/*Si une icone se trouve à côté d'un texte,
-alors ajouter 20px de margin left au texte*/
+//Si une icone se trouve à côté d'un texte, alors ajouter 20px de margin left au texte
 
 .button-step__icon + .button-step__text {
     margin-left: 20px;

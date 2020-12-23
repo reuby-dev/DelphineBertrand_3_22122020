@@ -1,4 +1,4 @@
-/*card restaurant*/
+//card restaurant
 
 .card-restaurant {
     flex-grow: 1;
@@ -31,7 +31,6 @@
         }
     }
 }
-
 
 //si l'icone est à droite d'un texte, ajouter un margin left)
 .card-restaurant__text + .card-restaurant__icon {
