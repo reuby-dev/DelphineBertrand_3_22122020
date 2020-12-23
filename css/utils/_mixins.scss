@@ -1,6 +1,6 @@
 //conteneur taille max du site
 
-@mixin max-container () {
+@mixin max-container() {
     max-width: 1400px;
     margin: auto;
     padding-left: 20px;
@@ -9,8 +9,16 @@
 
 //comportement des images dans leur conteneur
 
-@mixin img-size () {
+@mixin img-size() {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+//ombre portée
+
+@mixin shadow($x:0, $y:10px, $blur:15px, $color:#e6e6e6) {
+    -webkit-box-shadow: $x $y $blur $color;
+    -moz-box-shadow: $x $y $blur $color;
+    box-shadow: $x $y $blur $color;
 }
