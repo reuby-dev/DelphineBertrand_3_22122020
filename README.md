@@ -50,10 +50,10 @@ Le visiteur peut ajouter les plats qu'il souhaite à sa commande en cliquant des
 la droite vers la gauche. Pour cette première version, l’effet peut apparaître au survol sur desktop au lieu du clic. Si l’intitulé du plat est trop long, il devra être rogné avec des points de suspension.
 
 # Couleurs
-Primaire : #9356DC (violet)
-Secondaire : #FF79DA (rose)
-Tertiaire : #99E2D0 (vert)
+- Primaire : #9356DC (violet)
+- Secondaire : #FF79DA (rose)
+- Tertiaire : #99E2D0 (vert)
 
 # Police
-Logo et titres: Shrikhand
-Texte: Roboto
+- Logo et titres: Shrikhand
+- Texte: Roboto
