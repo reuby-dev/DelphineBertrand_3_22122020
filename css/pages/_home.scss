@@ -1,12 +1,12 @@
 //Section localisation
 
 .localisation {
-    background-color: $grey-medium;
+    background-color: darken($grey, 5%);
     padding: 20px;
     text-align: center;
 
     input {
-        background-color: $grey-medium;
+        background-color: darken($grey, 5%);
         border: none;
         margin-left: 10px;
         width: 105px;
@@ -19,7 +19,7 @@
 //Présentation du concept
 
 .presentation {
-    background-color: $grey-light;
+    background-color: $grey;
     padding: 50px 20px;
     text-align: center;
 
@@ -45,7 +45,7 @@
 //section présentation des restaurants
 
 .restaurant {
-    background-color: $grey-light;
+    background-color: $grey;
     padding-top: 50px;
     padding-bottom: 50px;
 

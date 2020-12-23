@@ -22,7 +22,7 @@
     flex-grow: 1;
     position: relative;
     padding: 30px;
-    background-color: $grey-light;
+    background-color: $grey;
     border-radius: 20px;
     box-shadow: $blur-shadow;
     text-align: left;
@@ -31,7 +31,7 @@
     
     &:hover {
         transition-duration: 0.5s;
-        background-color: $grey-medium;
+        background-color: darken($grey, 5%);
     }
 }
 
@@ -40,7 +40,7 @@
     
     &:hover {
         transition-duration: 0.5s;
-        background-color: #eddeff;
+        background-color: darken(#f5edff, 5%);
     }
 }
 
@@ -51,7 +51,7 @@
     height: $step__round-size;
     border-radius: 100%;
     background-color: $primary-color;
-    color:white;
+    color: white;
     line-height: $step__round-size;
     left: -$step__round-size /2;
     top: calc(50% - #{$step__round-size} /2 );
