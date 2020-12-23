@@ -9,7 +9,7 @@
     min-width: 225px;
     height: 250px;
     margin-bottom: 20px;
-    @include shadow;
+    box-shadow: $blur-shadow;
 
     &__figure {
         height: 66%; //magic number

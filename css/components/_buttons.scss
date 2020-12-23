@@ -5,7 +5,7 @@
     background: linear-gradient($secondary-color, $primary-color);
     background-size: 120% 120%;
     border-radius: 30px;
-    @include shadow (0, 5px, 10px, #aaa);
+    box-shadow: $dark-shadow;
 
     &:hover {
         transition-duration: 1s;
@@ -28,7 +28,7 @@
     text-align: left;
     margin-bottom: 20px;
     margin-left: $step__round-size /2;
-    @include shadow;
+    box-shadow: $blur-shadow;
     
     &:hover {
         transition-duration: 0.5s;
