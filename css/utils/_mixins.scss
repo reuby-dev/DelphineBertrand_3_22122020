@@ -1,11 +1,16 @@
-/*conteneur taille max*/
-/*1 : défini la taille maximale du site*/
-/*2 : centre le contenu */
-/*3 : évite que le contenu soit contre le bord de l'écran*/
+/*conteneur taille max du site*/
 
-@mixin container ($width-max: $max-width) {
-    max-width: $width-max; /* 1 */
-    margin: auto; /* 2 */
-    padding-left: 20px; /* 3 */
-    padding-right: 20px; /* 3 */
+@mixin max-container ($width-max: $max-width) {
+    max-width: $width-max;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
    }
+
+/*comportement des images dans leur div*/
+
+@mixin img-size () {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

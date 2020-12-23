@@ -16,24 +16,47 @@
     }
 }
 
+/*Présentation du concept*/
+
 .presentation {
     background-color: $grey-light;
-    padding: 45px 20px 55px 20px;
+    padding: 50px 20px;
     text-align: center;
 
-    .presentation__text {
+    &__text {
         font-weight: $font-weight-light;
         margin-bottom: 30px;
     }
 }
 
+/*section fonctionnement du site*/
+
 .function {
-    @include container;
+    @include max-container;
     padding-top: 50px;
     padding-bottom: 50px;
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
-.function__container {
-    display: flex;
-    flex-wrap: wrap;
+/*section présentation des restaurants*/
+
+.restaurant {
+    background-color: $grey-light;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &__container {
+        @include max-container;
+
+        .restaurant__presentation {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    } 
 }
+
