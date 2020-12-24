@@ -5,5 +5,5 @@
 }
 
 .footer__container {
-    @include max-container;
+    @extend .max-container;
 }

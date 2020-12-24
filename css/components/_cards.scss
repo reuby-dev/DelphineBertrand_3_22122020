@@ -9,26 +9,25 @@
     min-width: 225px;
     height: 250px;
     margin-bottom: 20px;
-    box-shadow: $blur-shadow;
+    box-shadow: $blur-shadow; 
+}
 
-    &__figure {
-        height: 66%; //magic number
-        
-        .card-restaurant__img {
-            @include img_size;
-        }
-    }
+.card-restaurant__figure {
+    height: 66%; //magic number
+}
 
-    &__body {
-        display: flex;
-        padding: 20px 25px 20px 15px;
+.card-restaurant__img {
+    @extend .img-size;
+}
 
-        .card-restaurant__icon {
-            
-            &:hover {
+.card-restaurant__body {
+    display: flex;
+    padding: 20px 25px 20px 15px;  
+}
 
-            }
-        }
+.card-restaurant__icon {
+
+    &:hover {
     }
 }
 
