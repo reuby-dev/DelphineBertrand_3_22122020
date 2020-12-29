@@ -1,0 +1,13 @@
+.figure {
+    height: 270px;
+}
+
+.figure__img {
+    @extend .img-size;
+}
+
+.menu {
+    background-color: $grey;
+    padding: 35px 20px 85px 20px;
+}
+
