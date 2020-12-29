@@ -17,6 +17,16 @@ $tertiary-color: $morning-glory;
 $grey: rgb(246,246,246);
 $grey-icon: rgb(126,126,126);
 
+//typography
+
+$font-family-sans-serif: 'Roboto', Helvetica, Arial, sans-serif;
+$font-family-serif: 'Shrikhand', Georgia, serif;
+
+$font-weight-thin: 100;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
 //step round size
 $step__round-size: 25px;
 
@@ -24,3 +34,4 @@ $step__round-size: 25px;
 $net-shadow: 0 2px 5px rgb(170, 170, 170);
 $blur-shadow: 0 10px 10px rgb(230, 230, 230);
 $dark-shadow: 0 5px 15px rgb(170, 170, 170);
+

@@ -1,13 +1,46 @@
 .figure {
     height: 270px;
-}
 
-.figure__img {
-    @extend .img-size;
+    .figure__img {
+        @extend .img-size;
+    }
 }
 
 .menu {
+    position: relative;
+    z-index:1;
+    top: -40px;
     background-color: $grey;
+    border-radius: 40px 40px 0 0;
     padding: 35px 20px 85px 20px;
+    margin-bottom:-40px;
 }
 
+.menu__title-container {
+    display: flex;
+    padding-right: 40px;
+}
+
+.menu__hilighted {
+    width: 40px;
+    border-bottom: solid 3px $tertiary-color;
+    margin-bottom: 15px;
+}
+
+.container-button {
+    margin-top: 50px;
+    text-align: center;
+}
+
+//typography comportement in menu page
+
+.menu__title-restaurant {
+    font-family: $font-family-serif;
+    letter-spacing: 0.05rem;
+  }
+  
+  .menu__title {
+    font-weight: $font-weight-light;
+    text-transform: uppercase;
+    margin-top: 40px;
+  }

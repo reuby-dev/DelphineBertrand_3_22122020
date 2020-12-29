@@ -31,8 +31,7 @@
     }
 }
 
-//si l'icone est à droite d'un texte, ajouter un margin left)
-.card-restaurant__text + .card-restaurant__icon {
+.card-restaurant__icon {
     margin-left: auto;
 }
 
