@@ -5,4 +5,18 @@
     text-align: center;
     box-shadow: $net-shadow;
     background-color: white;
+    vertical-align: middle;
+}
+
+.header__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 50%;
+}
+
+//centre verticalement la flèche du header
+.fa-arrow-left {
+    align-self: center;
+    margin-right: 65px;
 }
