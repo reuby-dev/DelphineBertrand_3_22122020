@@ -406,6 +406,7 @@ p {
   padding: 20px;
   text-align: center;
   box-shadow: 0 2px 5px #aaaaaa;
+  background-color: white;
 }
 
 .footer {
@@ -436,6 +437,7 @@ p {
 .logo--lighter {
   color: white;
   font-size: 1.5rem;
+  margin-bottom: 25px;
 }
 
 .button-active {
