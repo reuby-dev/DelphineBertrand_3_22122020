@@ -362,6 +362,11 @@ a {
   color: black;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 input, button {
   outline: 0;
 }
@@ -407,6 +412,20 @@ p {
   background-color: #373737;
   padding-top: 30px;
   padding-bottom: 30px;
+  color: white;
+}
+
+.footer__list {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.footer__icon--size {
+  font-size: 10px;
+}
+
+.footer__icon {
+  margin-right: 10px;
 }
 
 .logo {

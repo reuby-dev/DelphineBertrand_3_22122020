@@ -17,7 +17,7 @@
 
 <body>
     <header class="header">
-        <p><strong class="logo">ohmyfood</strong></p>
+        <div class="logo">ohmyfood</div>
     </header>
 
     <section class="localisation">
@@ -130,13 +130,19 @@
 
     <footer class="footer">
         <div class="footer__container">
-            <p><strong class="logo logo--lighter">ohmyfood</strong></p>
-            <i>T</i>
-            <p>Proposer un restaurant</p>
-            <i>T</i>
-            <p>Devenir partenaires</p>
-            <p>Mentions légales</p>
-            <p>Contact</p>
+            <div class="logo logo--lighter">ohmyfood</div>
+            <ul>
+                <li class="footer__list">
+                    <i class="fas fa-utensils footer__icon"></i>
+                    <p class="footer__text">Proposer un restaurant</p>
+                </li>
+                <li class="footer__list">
+                    <div class="footer__icon--size"><i class="fas fa-hands-helping footer__icon"></i></div>
+                    <p class="footer__text">Devenir partenaire</p>
+                </li>
+                <li class="footer__list">Mentions légales</li>
+                <li class="footer__list">Contact</li>
+            </ul>
         </div>
     </footer>
 </body>
