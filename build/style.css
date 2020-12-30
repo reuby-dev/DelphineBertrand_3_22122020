@@ -355,6 +355,11 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  min-width: 260px;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -366,7 +371,7 @@ ul {
 }
 
 h1 {
-  margin: 0;
+  margin-top: 0;
 }
 
 h2 {
@@ -528,7 +533,7 @@ body {
   background-color: white;
   border-radius: 15px;
   overflow: hidden;
-  min-width: 225px;
+  min-width: 230px;
   height: 250px;
   margin-bottom: 20px;
   margin-right: 20px;
@@ -646,12 +651,12 @@ body {
 .menu__title-restaurant {
   font-family: "Shrikhand", Georgia, serif;
   letter-spacing: 0.05rem;
+  margin-bottom: 40px;
 }
 
 .menu__title {
   font-weight: 300;
   text-transform: uppercase;
-  margin-top: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
