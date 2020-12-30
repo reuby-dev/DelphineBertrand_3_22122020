@@ -1,5 +1,5 @@
 .figure {
-    height: 270px;
+    height: 500px;
 
     .figure__img {
         @extend .img-size;
@@ -8,12 +8,12 @@
 
 .menu {
     position: relative;
-    z-index:1;
-    top: -40px;
+    z-index: 1;
+    margin-top: -40px;
     background-color: $grey;
     border-radius: 40px 40px 0 0;
-    padding: 35px 20px 85px 20px;
-    margin-bottom:-40px;
+    padding: 35px $padding-l-r 85px $padding-l-r;
+    
 }
 
 .menu__title-container {

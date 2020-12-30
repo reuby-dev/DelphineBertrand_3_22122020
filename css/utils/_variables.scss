@@ -1,7 +1,3 @@
-// -----------------------------------------------------------------------------
-// This file contains all application-wide Sass variables.
-// -----------------------------------------------------------------------------*
-
 // original name of colors 
 $medium-purple:#9356DC;
 $blush-pink: #FF79DA;
@@ -27,11 +23,14 @@ $font-weight-light: 300;
 $font-weight-regular: 400;
 $font-weight-bold: 700;
 
-//step round size
-$step__round-size: 25px;
-
 //shadow
 $net-shadow: 0 2px 5px rgb(170, 170, 170);
 $blur-shadow: 0 10px 10px rgb(230, 230, 230);
 $dark-shadow: 0 5px 15px rgb(170, 170, 170);
 
+//step round size
+$step__round-size: 25px;
+
+//padding
+$padding-l-r: 20px;
+$padding-t-b: 50px;
