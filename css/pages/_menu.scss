@@ -1,5 +1,5 @@
 .figure {
-    height: 500px;
+    height: 450px;
 
     .figure__img {
         @extend .img-size;
@@ -13,7 +13,6 @@
     background-color: $grey;
     border-radius: 40px 40px 0 0;
     padding: 35px $padding-l-r 85px $padding-l-r;
-    
 }
 
 .menu__title-container {
@@ -25,6 +24,17 @@
     width: 40px;
     border-bottom: solid 3px $tertiary-color;
     margin-bottom: 15px;
+}
+
+.menu__main-container {
+    display:flex;
+    flex-wrap: wrap;
+    margin-right: -20px;
+}
+
+.menu__dish-container {
+    flex-grow: 1;
+    margin-right: 20px;
 }
 
 .container-button {
