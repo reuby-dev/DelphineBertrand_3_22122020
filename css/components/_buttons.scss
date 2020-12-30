@@ -25,11 +25,12 @@
 
 .button-step {
     flex-grow: 1;
+    display: flex;
     position: relative;
     padding: 30px;
     background-color: $grey;
     border-radius: 20px;
-    text-align: left;
+    margin-right: $margin-r;
     margin-bottom: 20px;
     margin-left: $step__round-size /2;
     box-shadow: $blur-shadow;
@@ -63,6 +64,7 @@
 }
 
 .button-step__text {
+    display: inline-block;
     font-weight: $font-weight-bold;
     line-height: 20px;
     vertical-align: middle;
@@ -70,8 +72,7 @@
 
 .button-step__icon {
     color: darken($grey,50%);
-    line-height: 20px !important; /*outre passe les propriétés font-awesome*/
-    vertical-align: middle !important; /*idem*/
+    align-self: center;
 }
 
 .button-step__icon--active {
