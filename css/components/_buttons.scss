@@ -1,0 +1,86 @@
+//bouton qui appelle à l'action: rechercher un resto, commander...
+
+.button-active {
+    padding: 20px;
+    background: linear-gradient($secondary-color, $primary-color);
+    border-radius: 30px;
+    box-shadow: $dark-shadow;
+    transition: box-shadow 0.5s ease-out;
+    
+    &:hover {
+        box-shadow: $very-dark-shadow;
+    }
+
+    .button-active__text {
+        color: white;
+    }
+}
+
+.button-active--larger {
+    padding: 20px 50px;
+}
+
+//bouton avec étapes
+
+.button-step {
+    flex-grow: 1;
+    display: flex;
+    position: relative;
+    padding: 30px;
+    background-color: $grey;
+    border-radius: 20px;
+    margin-right: $margin-r;
+    margin-bottom: 20px;
+    margin-left: $step__round-size /2;
+    box-shadow: $blur-shadow;
+    transition: box-shadow 0.5s ease-out;
+    
+    &:hover {
+        background-color: lighten($grey, 1%);
+        box-shadow: $dark-shadow;
+    }
+}
+
+.button-step--active {
+    background-color: #f5edff;
+    
+    &:hover {
+        transition-duration: 0.5s;
+        background-color: lighten(#f5edff, 1%);
+    }
+}
+
+.button-step__round {
+    position: absolute;
+    text-align: center;
+    width: $step__round-size;
+    height: $step__round-size;
+    border-radius: 100%;
+    background-color: $primary-color;
+    color: white;
+    line-height: $step__round-size;
+    left: -$step__round-size /2;
+    top: calc(50% - #{$step__round-size} /2 );
+}
+
+.button-step__text {
+    display: inline-block;
+    font-weight: $font-weight-bold;
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+.button-step__icon {
+    color: darken($grey,50%);
+    align-self: center;
+}
+
+.button-step__icon--active {
+    color: $primary-color;
+}
+
+//Si une icone se trouve à côté d'un texte, alors ajouter 20px de margin left au texte
+
+.button-step__icon + .button-step__text {
+    margin-left: 20px;
+}

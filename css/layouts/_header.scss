@@ -1,0 +1,17 @@
+.header {
+    position: relative;
+    z-index: 1;
+    padding: 20px $padding-l-r;
+    text-align: center;
+    box-shadow: $net-shadow;
+    background-color: white;
+    vertical-align: middle;
+
+    .header__icon {
+        position: absolute;
+        left: $padding-l-r;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+

@@ -5,7 +5,7 @@
     './utils/variables',
     './utils/functions',
     './utils/mixins',
-    './utils/placeholders';
+    './utils/extend';
 
 //2. Vendors
 @import 
@@ -14,19 +14,23 @@
 //3. Base
 @import 
     './base/base',
-    './base/typography';
+    './base/typography',
+    './base/animation';
 
 //4. Layout-related sections
 @import 
     './layouts/header',
-    './layouts/footer',
-    './layouts/container';
+    './layouts/footer';
 
 //5. Components
 @import
+    './components/logo',
     './components/buttons',
     './components/cards';
 
 //6. Page-specific styles
+@import
+    './pages/home',
+    './pages/menu';
 
 //7. Themes
