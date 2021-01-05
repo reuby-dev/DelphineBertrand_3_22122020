@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
-.max-container, .footer__container, .function, .restaurant__container {
+.max-container, .footer__container, .function, .restaurant__container, .menu__max-container {
   max-width: 1400px;
   margin: auto;
   padding: 0 20px;
@@ -403,6 +403,26 @@ body {
   font-size: 1rem;
 }
 
+@keyframes gradual-onset {
+  from {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes plate-selection {
+  from {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(20%);
+  }
+}
 .header {
   position: relative;
   z-index: 1;
@@ -412,7 +432,7 @@ body {
   background-color: white;
   vertical-align: middle;
 }
-.header .header__icon {
+.header__icon {
   position: absolute;
   left: 20px;
   top: 50%;
@@ -583,6 +603,11 @@ body {
 .card-restaurant__body {
   display: flex;
   padding: 20px 25px 20px 15px;
+  width: 100%;
+}
+
+.card-restaurant__text {
+  text-overflow: ellipsis;
 }
 
 .card-restaurant__icon {
@@ -592,16 +617,33 @@ body {
   -webkit-text-stroke: 1.5px white;
 }
 
+.card-restaurant--fit {
+  display: flex;
+  justify-content: space-between;
+  animation: gradual-onset 1s ease-in-out;
+  height: auto;
+}
+
 .card-restaurant__price {
   font-weight: 700;
   margin-left: auto;
   align-self: flex-end;
 }
 
-.card-restaurant--fit {
-  height: auto;
+/*
+.card-restaurant--fit::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f058";
+    font-weight: 900;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    color: white;
+    background-color: $tertiary-color;
 }
-
+*/
 .localisation {
   background-color: #e9e9e9;
   padding: 20px;

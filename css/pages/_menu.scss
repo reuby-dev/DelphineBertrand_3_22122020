@@ -15,6 +15,10 @@
     padding: 35px $padding-l-r 85px $padding-l-r;
 }
 
+.menu__max-container {
+    @extend .max-container;
+}
+
 .menu__title-container {
     display: flex;
     padding-right: 40px;

@@ -6,8 +6,8 @@
     box-shadow: $net-shadow;
     background-color: white;
     vertical-align: middle;
-
-    .header__icon {
+    
+    &__icon {
         position: absolute;
         left: $padding-l-r;
         top: 50%;

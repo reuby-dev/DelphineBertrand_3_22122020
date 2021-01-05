@@ -1,0 +1,21 @@
+@keyframes gradual-onset {
+    from {
+        opacity:0;
+        transform: translateY(20%);
+    }
+    to {
+        opacity:1;
+        transform: translateY(0);
+    }
+} 
+
+@keyframes plate-selection {
+    from {
+        opacity:0;
+        transform: translateX(20%);
+    }
+    to {
+        opacity:1;
+        transform: translateX(20%);
+    }
+}

@@ -1,7 +1,6 @@
 //card restaurant
 
 .card-restaurant {
-    
     flex-grow: 1;
     flex-basis: 0;
     background-color: white;
@@ -42,6 +41,11 @@
 .card-restaurant__body {
     display: flex;
     padding: 20px 25px 20px 15px;  
+    width: 100%;
+}
+
+.card-restaurant__text {
+    text-overflow: ellipsis;
 }
 
 .card-restaurant__icon {
@@ -53,12 +57,31 @@
 
 //carte restaurant pour la page de menu
 
+.card-restaurant--fit {
+    display: flex;
+    justify-content: space-between;
+    animation: gradual-onset 1s ease-in-out;
+    height: auto;
+}
+
 .card-restaurant__price {
     font-weight: $font-weight-bold;
     margin-left: auto;
     align-self: flex-end;
 }
 
-.card-restaurant--fit {
-    height: auto;
+
+/*
+.card-restaurant--fit::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f058";
+    font-weight: 900;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    color: white;
+    background-color: $tertiary-color;
 }
+*/
