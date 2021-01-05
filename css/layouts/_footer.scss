@@ -3,11 +3,11 @@
     padding-top: 30px;
     padding-bottom: 30px;
     color: white;
-    
-}
 
-.footer__container {
-    @extend .max-container;
+    &__container {
+        @extend .max-container;
+    }
+    
 }
 
 .footer__list {
@@ -15,10 +15,14 @@
     margin-bottom: 10px;
 }
 
+.footer__icon {
+    margin-right: 10px;
+}
+
 .footer__icon--size {
     font-size: 10px;
 }
 
-.footer__icon {
-    margin-right: 10px;
+.footer__contact {
+    color:white;
 }

@@ -11,6 +11,11 @@
     margin-bottom: 20px;
     margin-right: $margin-r;
     box-shadow: $blur-shadow; 
+
+    &:hover {
+        transition: 1s ease-out;
+        box-shadow: $dark-shadow;
+    }
 }
 
 .card-restaurant__figure {
@@ -27,13 +32,11 @@
 }
 
 .card-restaurant__icon {
-
-    &:hover {
-    }
-}
-
-.card-restaurant__icon {
+    position: relative;
+    font-size: 30px;
     margin-left: auto;
+    -webkit-text-stroke: 1.5px white;
+
 }
 
 //carte restaurant pour la page de menu
