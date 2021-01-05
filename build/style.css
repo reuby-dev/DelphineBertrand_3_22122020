@@ -550,6 +550,18 @@ body {
 
 .card-restaurant__figure {
   height: 66%;
+  position: relative;
+}
+
+.card-restaurant__new {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #99E2D0;
+  color: #217460;
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 5px;
 }
 
 .card-restaurant__body {
