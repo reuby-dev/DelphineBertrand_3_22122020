@@ -11,8 +11,8 @@
 
 @keyframes plate-selection {
     from {
-        width: 0;
         transform: translateX(100%);
+        width: 0;
     }
     to {
         transform: translateX(0);
@@ -21,7 +21,7 @@
 }
 
 @keyframes rotation {
-    from {
+    from { 
         transform: rotate(0);
     }
     to {
