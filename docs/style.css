@@ -351,7 +351,7 @@ template {
   display: none;
 }
 
-html {
+* {
   box-sizing: border-box;
 }
 
@@ -671,7 +671,7 @@ body {
   background-color: #e9e9e9;
   border: none;
   margin-left: 10px;
-  width: 105px;
+  width: 110px;
 }
 .localisation input::placeholder {
   color: black;
