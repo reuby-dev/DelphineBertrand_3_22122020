@@ -11,10 +11,12 @@
 
 @keyframes plate-selection {
     from {
+        width: 0;
         transform: translateX(100%);
     }
     to {
         transform: translateX(0);
+        width: 20%;
     }
 }
 

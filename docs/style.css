@@ -415,10 +415,12 @@ body {
 }
 @keyframes plate-selection {
   from {
+    width: 0;
     transform: translateX(100%);
   }
   to {
     transform: translateX(0);
+    width: 20%;
   }
 }
 @keyframes rotation {
@@ -633,14 +635,17 @@ body {
 }
 .card-restaurant--fit:hover .card-restaurant__check {
   display: flex;
-  width: 20%;
   background: #99E2D0;
-  animation: plate-selection 1s ease-in-out;
+  animation: plate-selection 0.5s ease-in-out forwards;
 }
 .card-restaurant--fit:hover .card-restaurant__check .fa-check-circle {
   color: white;
   margin: auto;
-  animation: rotation 1s ease-in-out;
+  animation: rotation 0.5s ease-in-out;
+}
+
+.card-restaurant__check {
+  display: none;
 }
 
 .card-restaurant--fit:nth-child(4) {
