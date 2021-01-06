@@ -406,7 +406,7 @@ body {
 @keyframes gradual-onset {
   from {
     opacity: 0;
-    transform: translateY(20%);
+    transform: translateY(40%);
   }
   to {
     opacity: 1;
@@ -415,12 +415,18 @@ body {
 }
 @keyframes plate-selection {
   from {
-    opacity: 0;
-    transform: translateX(20%);
+    transform: translateX(100%);
   }
   to {
-    opacity: 1;
-    transform: translateX(20%);
+    transform: translateX(0);
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(1turn);
   }
 }
 .header {
@@ -578,9 +584,10 @@ body {
   margin-bottom: 20px;
   margin-right: 20px;
   box-shadow: 0 10px 10px #e6e6e6;
+  cursor: pointer;
+  transition: box-shadow 1s ease-out;
 }
 .card-restaurant:hover {
-  transition: 1s ease-out;
   box-shadow: 0 5px 15px #aaaaaa;
 }
 
@@ -620,8 +627,28 @@ body {
 .card-restaurant--fit {
   display: flex;
   justify-content: space-between;
-  animation: gradual-onset 1s ease-in-out;
+  animation: gradual-onset 1s ease-in-out forwards;
   height: auto;
+  opacity: 0;
+}
+.card-restaurant--fit:hover .card-restaurant__check {
+  display: flex;
+  width: 20%;
+  background: #99E2D0;
+  animation: plate-selection 1s ease-in-out;
+}
+.card-restaurant--fit:hover .card-restaurant__check .fa-check-circle {
+  color: white;
+  margin: auto;
+  animation: rotation 1s ease-in-out;
+}
+
+.card-restaurant--fit:nth-child(4) {
+  animation-delay: 0.5s;
+}
+
+.card-restaurant--fit:nth-child(5) {
+  animation-delay: 1s;
 }
 
 .card-restaurant__price {
@@ -630,20 +657,6 @@ body {
   align-self: flex-end;
 }
 
-/*
-.card-restaurant--fit::after {
-    font-family: "Font Awesome 5 Free";
-    content: "\f058";
-    font-weight: 900;
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20%;
-    color: white;
-    background-color: $tertiary-color;
-}
-*/
 .localisation {
   background-color: #e9e9e9;
   padding: 20px;

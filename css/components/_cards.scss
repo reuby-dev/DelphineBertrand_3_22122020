@@ -11,9 +11,10 @@
     margin-bottom: 20px;
     margin-right: $margin-r;
     box-shadow: $blur-shadow; 
+    cursor: pointer;
+    transition: box-shadow 1s ease-out;
 
     &:hover {
-        transition: 1s ease-out;
         box-shadow: $dark-shadow;
     }
 }
@@ -60,8 +61,32 @@
 .card-restaurant--fit {
     display: flex;
     justify-content: space-between;
-    animation: gradual-onset 1s ease-in-out;
+    animation: gradual-onset 1s ease-in-out forwards;
     height: auto;
+    opacity:0;
+
+    &:hover {
+        .card-restaurant__check{
+            display: flex;
+            width: 20%;
+            background: $tertiary-color;
+            animation: plate-selection 1s ease-in-out;
+        
+            .fa-check-circle {
+                color: white;
+                margin: auto;
+                animation: rotation 1s ease-in-out;
+            }
+        }
+    }
+}
+
+.card-restaurant--fit:nth-child(4) {
+    animation-delay: 0.5s;
+}
+
+.card-restaurant--fit:nth-child(5) {
+    animation-delay: 1s;
 }
 
 .card-restaurant__price {
@@ -69,19 +94,3 @@
     margin-left: auto;
     align-self: flex-end;
 }
-
-
-/*
-.card-restaurant--fit::after {
-    font-family: "Font Awesome 5 Free";
-    content: "\f058";
-    font-weight: 900;
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20%;
-    color: white;
-    background-color: $tertiary-color;
-}
-*/

@@ -1,7 +1,7 @@
 @keyframes gradual-onset {
     from {
         opacity:0;
-        transform: translateY(20%);
+        transform: translateY(40%);
     }
     to {
         opacity:1;
@@ -11,11 +11,18 @@
 
 @keyframes plate-selection {
     from {
-        opacity:0;
-        transform: translateX(20%);
+        transform: translateX(100%);
     }
     to {
-        opacity:1;
-        transform: translateX(20%);
+        transform: translateX(0);
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(1turn);
     }
 }
