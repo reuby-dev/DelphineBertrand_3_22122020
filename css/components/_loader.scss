@@ -1,11 +1,12 @@
 .loader {
+    visibility: hidden;
     position: fixed;
     z-index: 500;
     width: 100%;
-    height:100%;
+    height: 100%;
     background: rgba(255, 255, 255, 0.7);
-    cursor:wait;
-    animation:loader 3s forwards;
+    cursor: wait;
+    animation: loader-bg 3s;
 
     &__container {
         position: absolute;
@@ -21,7 +22,7 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             -webkit-text-stroke: 0;
-            animation: gradient-appear 1.6s ease-in-out;
+            animation: gradient-appear 2.5s ease-in-out;
         }
     }
 }
