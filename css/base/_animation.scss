@@ -37,9 +37,9 @@
 
 @keyframes gradient-appear {
     from { 
-        transform: scale(0);
+        width: 0;
     }
     to {
-        transform: scale(1);
+        width: 100%;
     }
 }

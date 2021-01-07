@@ -1,6 +1,6 @@
 //card restaurant
 
-.card-restaurant {
+.card {
     flex-grow: 1;
     flex-basis: 0;
     background-color: white;
@@ -8,8 +8,7 @@
     overflow: hidden;
     min-width: 230px;
     height: 250px;
-    margin-bottom: 20px;
-    margin-right: $margin-r;
+    margin: 0 20px 20px 0;
     box-shadow: $blur-shadow; 
     cursor: pointer;
     transition: box-shadow 1s ease-out;
@@ -19,16 +18,16 @@
     }
 }
 
-.card-restaurant__figure {
+.card__figure {
     height: 66%; //magic number
     position: relative;
 }
 
-.card-restaurant__img {
+.card__img {
     @extend .img-size;
 }
 
-.card-restaurant__new {
+.card__new {
     position: absolute;
     top: 15px;
     right: 15px;
@@ -39,38 +38,49 @@
     border-radius: 5px;
 }
 
-.card-restaurant__body {
+.card__body {
     display: flex;
-    padding: 20px 25px 20px 15px; 
-    width: 100%; 
+    flex-grow: 1;
+    padding: 20px;  
 }
 
-.card-restaurant__text {
+.card__text {
     text-overflow: ellipsis;
 }
 
 //carte restaurant pour la page de menu
 
-.card-restaurant--fit {
+.card__price {
+    font-weight: $font-weight-bold;
+    margin-left: auto;
+    align-self: flex-end;
+}
+
+.card--fit {
     display: flex;
-    justify-content: space-between;
     animation: gradual-onset 1s ease-in-out forwards;
     height: auto;
-    opacity:0;
+    opacity: 0; //permet d'apparaitre lors de l'animation
 
-    .card-restaurant__check{
-        display: none;
+    .card__check{
+        position: relative;
+        display: none; //permet d'apparaitre lors de l'animation
+
+        .card__icon-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
 
         .fa-check-circle {
+            font-size: 30px;
             color: white;
-            margin: auto;
-            /*transform: rotate(0);
-            transition: transform 0.5s ease-in-out;*/
         }
     }
 
     &:hover {
-            .card-restaurant__check{
+            .card__check{
             display: flex;
             background: $tertiary-color;
             width: 0;
@@ -83,16 +93,12 @@
     }
 }
 
-.card-restaurant--fit:nth-child(4) {
+.card--fit:nth-child(4) {
     animation-delay: 0.5s;
 }
 
-.card-restaurant--fit:nth-child(5) {
+.card--fit:nth-child(5) {
     animation-delay: 1s;
 }
 
-.card-restaurant__price {
-    font-weight: $font-weight-bold;
-    margin-left: auto;
-    align-self: flex-end;
-}
+
