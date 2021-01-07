@@ -11,7 +11,7 @@
 
 @keyframes plate-selection {
     from {
-        transform: translateX(100%);
+        transform: translateX(1);
         width: 0;
     }
     to {
@@ -26,5 +26,20 @@
     }
     to {
         transform: rotate(1turn);
+    }
+}
+
+@keyframes loader {
+    100% {
+        z-index: -100;
+    }
+}
+
+@keyframes gradient-appear {
+    from { 
+        width:0;
+    }
+    to {
+        width:100%;
     }
 }
