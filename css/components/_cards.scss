@@ -60,6 +60,13 @@
 
     .card-restaurant__check{
         display: none;
+
+        .fa-check-circle {
+            color: white;
+            margin: auto;
+            /*transform: rotate(0);
+            transition: transform 0.5s ease-in-out;*/
+        }
     }
 
     &:hover {
@@ -68,10 +75,8 @@
             background: $tertiary-color;
             width: 0;
             animation: plate-selection 0.5s ease-in-out forwards;
-        
+
             .fa-check-circle {
-                color: white;
-                margin: auto;
                 animation: rotation 0.5s ease-in-out;
             }
         }
