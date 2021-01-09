@@ -4,11 +4,11 @@
     flex-grow: 1;
     flex-basis: 0;
     background-color: white;
-    border-radius: 15px;
+    border-radius: $border-radius-m;
     overflow: hidden;
     min-width: 230px;
     height: 250px;
-    margin: 0 20px 20px 0;
+    margin: 0 $margin-m $margin-m 0;
     box-shadow: $blur-shadow; 
     cursor: pointer;
     transition: box-shadow 1s ease-out;
@@ -34,14 +34,14 @@
     background: $tertiary-color;
     color: darken($tertiary-color, 45%);
     text-align: center;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: $padding-s 15px;
+    border-radius: $border-radius-xs;
 }
 
 .card__body {
     display: flex;
     flex-grow: 1;
-    padding: 20px;  
+    padding: $padding-m;  
 }
 
 .card__text {

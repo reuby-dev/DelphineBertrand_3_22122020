@@ -2,7 +2,7 @@
 
 .button-active {
     position: relative;
-    padding: $padding-s;
+    padding: $padding-m;
     background: linear-gradient($secondary-color, $primary-color);
     border-radius: $border-radius-l;
     box-shadow: $dark-shadow;
@@ -33,7 +33,7 @@
 }
 
 .button-active--larger {
-    padding: $padding-s $padding-l;
+    padding: $padding-m $padding-l;
 }
 
 //bouton avec étapes
@@ -42,7 +42,7 @@
     flex-grow: 1;
     display: flex;
     position: relative;
-    padding: $padding-m;
+    padding: $padding-l;
     background-color: $grey;
     border-radius: $border-radius-m;
     margin: {
@@ -73,7 +73,7 @@
     text-align: center;
     width: $step__round-size;
     height: $step__round-size;
-    border-radius: $border-radius-round;
+    border-radius: $border-radius-xl;
     background-color: $primary-color;
     color: white;
     line-height: $step__round-size;

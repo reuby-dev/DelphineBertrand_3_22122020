@@ -47,34 +47,32 @@ $size-m: 16px;
 $size-l: 1.1em;
 
 //padding !x
-$padding-l-r: 20px; 
-$padding-t-b: 50px;
-
-//margin !x
-$margin-r: 20px;
+//$padding-l-r: 20px; 
+//$padding-t-b: 50px;
 
 
-//SPACING !!
+
+//SPACING
 $margin-xs: 5px;
 $margin-s: 10px;
 $margin-m: 20px;
 $margin-l: 40px;
 $margin-xl: 80px;
 
-$padding-s: 20px;
-$padding-m: 30px;
-$padding-l: 50px;
+$padding-xs: 5px; 
+$padding-s: 10px;
+$padding-m: 20px;
+$padding-l: 40px;
+$padding-xl: 80px;
 
 
-//BORDERS RADIUS !!
-$border-style: solid;
-$border-width: 1px;
-$border-width-alt: 2px;
+//BORDERS RADIUS
 
+$border-radius-xs: 5px;
+$border-radius-s: 10px;
 $border-radius-m: 20px;
-$border-radius-l: 30px;
-$border-radius-round: 100%;
-
+$border-radius-l: 40px;
+$border-radius-xl: 80px;
 
 //ANIMATIONS
 $transition-duration: .3s;

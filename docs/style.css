@@ -453,7 +453,7 @@ body {
 .header {
   position: relative;
   z-index: 1;
-  padding: 20px 20px;
+  padding: 20px;
   text-align: center;
   box-shadow: 0 2px 5px #aaaaaa;
   background-color: white;
@@ -559,7 +559,7 @@ body {
   position: relative;
   padding: 20px;
   background: linear-gradient(#FF79DA, #9356DC);
-  border-radius: 30px;
+  border-radius: 40px;
   box-shadow: 0 5px 15px #aaaaaa;
   transition: box-shadow 0.5s ease-out;
 }
@@ -577,7 +577,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  border-radius: 30px;
+  border-radius: 40px;
   background: rgba(255, 255, 255, 0.15);
   transition: opacity 0.5s ease-out;
 }
@@ -586,14 +586,14 @@ body {
 }
 
 .button-active--larger {
-  padding: 20px 50px;
+  padding: 20px 40px;
 }
 
 .button-step {
   flex-grow: 1;
   display: flex;
   position: relative;
-  padding: 30px;
+  padding: 40px;
   background-color: #f6f6f6;
   border-radius: 20px;
   margin-right: 20px;
@@ -620,7 +620,7 @@ body {
   text-align: center;
   width: 25px;
   height: 25px;
-  border-radius: 100%;
+  border-radius: 80px;
   background-color: #9356DC;
   color: white;
   line-height: 25px;
@@ -652,7 +652,7 @@ body {
   flex-grow: 1;
   flex-basis: 0;
   background-color: white;
-  border-radius: 15px;
+  border-radius: 20px;
   overflow: hidden;
   min-width: 230px;
   height: 250px;
@@ -749,7 +749,7 @@ body {
 
 .presentation {
   background-color: #f6f6f6;
-  padding: 50px 20px;
+  padding: 40px 20px;
   text-align: center;
 }
 .presentation__text {
@@ -758,8 +758,7 @@ body {
 }
 
 .function {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 40px 0;
 }
 .function__container {
   display: flex;
@@ -769,7 +768,7 @@ body {
 
 .restaurant {
   background-color: #f6f6f6;
-  padding: 50px 0;
+  padding: 40px 0;
 }
 .restaurant__container .restaurant__presentation {
   display: flex;
