@@ -11,11 +11,9 @@
 
 @keyframes check-box {
     from {
-        transform: translateX(1);
         width: 0;
     }
     to {
-        transform: translateX(0);
         width: 20%;
     }
 }
