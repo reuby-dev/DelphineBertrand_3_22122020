@@ -32,13 +32,6 @@ $very-dark-shadow: 0 5px 15px rgb(120, 120, 120);
 //step round size
 $step__round-size: 25px;
 
-//padding
-$padding-l-r: 20px;
-$padding-t-b: 50px;
-
-//margin
-$margin-r: 20px;
-
 //TYPOGRAPHY
 $main-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 
@@ -53,24 +46,34 @@ $size-s: 0.85em;
 $size-m: 16px;
 $size-l: 1.1em;
 
+//padding !x
+$padding-l-r: 20px; 
+$padding-t-b: 50px;
 
-//SPACING
+//margin !x
+$margin-r: 20px;
+
+
+//SPACING !!
 $margin-xs: 5px;
 $margin-s: 10px;
 $margin-m: 20px;
 $margin-l: 40px;
 $margin-xl: 80px;
 
-$padding-s: $margin-s $margin-s+5;
-$padding-m: $margin-m;
-$padding-l: $margin-m+10px $margin-l;
+$padding-s: 20px;
+$padding-m: 30px;
+$padding-l: 50px;
 
 
-//BORDERS
+//BORDERS RADIUS !!
 $border-style: solid;
 $border-width: 1px;
 $border-width-alt: 2px;
-$border-radius: 0;
+
+$border-radius-m: 20px;
+$border-radius-l: 30px;
+$border-radius-round: 100%;
 
 
 //ANIMATIONS

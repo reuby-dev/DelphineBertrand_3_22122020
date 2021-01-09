@@ -2,5 +2,3 @@
 @mixin animation($name, $duration, $timing-function:ease-in-out, $delay:0s, $fill-mode:none){
     animation: $name $duration $timing-function $delay $fill-mode;
 }
-
-//transitions
