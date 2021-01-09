@@ -6,12 +6,17 @@
     box-shadow: $net-shadow;
     background-color: white;
     vertical-align: middle;
-    
-    &__icon {
-        position: absolute;
-        left: 20px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
+}
+
+.header__container {
+    position: relative;
+    @extend .max-container;
+}
+
+.header__container-icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
