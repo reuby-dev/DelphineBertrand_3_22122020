@@ -12,6 +12,12 @@
   object-fit: cover;
 }
 
+.absolute-center, .loader__container, .card--fit .card__check .card__icon-container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -413,7 +419,7 @@ body {
     transform: translateY(0);
   }
 }
-@keyframes plate-selection {
+@keyframes check-box {
   from {
     transform: translateX(1);
     width: 0;
@@ -492,13 +498,10 @@ body {
   height: 100%;
   background: rgba(255, 255, 255, 0.8);
   cursor: wait;
-  animation: loader-bg 2.5s;
+  animation: loader-bg 2s;
 }
 .loader__container {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .loader__container .loader__item {
   font-family: "Shrikhand", Georgia, serif;
@@ -508,7 +511,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0;
-  animation: gradient-appear 2.5s ease-in-out;
+  animation: gradient-appear 2s ease-in-out 0s none;
 }
 
 .logo {
@@ -696,7 +699,7 @@ body {
 
 .card--fit {
   display: flex;
-  animation: gradual-onset 1s ease-in-out forwards;
+  animation: gradual-onset 1s ease-in-out 0s forwards;
   height: auto;
   opacity: 0;
 }
@@ -706,9 +709,6 @@ body {
 }
 .card--fit .card__check .card__icon-container {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .card--fit .card__check .fa-check-circle {
   font-size: 30px;
@@ -718,10 +718,10 @@ body {
   display: flex;
   background: #99E2D0;
   width: 0;
-  animation: plate-selection 0.5s ease-in-out forwards;
+  animation: check-box 0.5s ease-in-out 0s forwards;
 }
 .card--fit:hover .card__check .fa-check-circle {
-  animation: rotation 0.5s ease-in-out;
+  animation: rotation 0.5s ease-in-out 0s none;
 }
 
 .card--fit:nth-child(4) {

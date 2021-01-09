@@ -58,7 +58,7 @@
 
 .card--fit {
     display: flex;
-    animation: gradual-onset 1s ease-in-out forwards;
+    @include animation(gradual-onset, 1s, $fill-mode:forwards);
     height: auto;
     opacity: 0; //permet d'apparaitre lors de l'animation
 
@@ -68,9 +68,7 @@
 
         .card__icon-container {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            @extend .absolute-center;
         }
 
         .fa-check-circle {
@@ -84,10 +82,10 @@
             display: flex;
             background: $tertiary-color;
             width: 0;
-            animation: plate-selection 0.5s ease-in-out forwards;
+            @include animation(check-box, 0.5s, $fill-mode:forwards);
 
             .fa-check-circle {
-                animation: rotation 0.5s ease-in-out;
+                @include animation (rotation, 0.5s);
             }
         }
     }

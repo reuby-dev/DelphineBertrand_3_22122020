@@ -38,3 +38,42 @@ $padding-t-b: 50px;
 
 //margin
 $margin-r: 20px;
+
+//TYPOGRAPHY
+$main-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+
+$main-weight: 300;
+$bold-weight: 500;
+
+$line-height: 1.5em;
+$line-height-alt: 1.2em;
+
+$size-xs: 0.5em;
+$size-s: 0.85em;
+$size-m: 16px;
+$size-l: 1.1em;
+
+
+//SPACING
+$margin-xs: 5px;
+$margin-s: 10px;
+$margin-m: 20px;
+$margin-l: 40px;
+$margin-xl: 80px;
+
+$padding-s: $margin-s $margin-s+5;
+$padding-m: $margin-m;
+$padding-l: $margin-m+10px $margin-l;
+
+
+//BORDERS
+$border-style: solid;
+$border-width: 1px;
+$border-width-alt: 2px;
+$border-radius: 0;
+
+
+//ANIMATIONS
+$transition-duration: .3s;
+$transition-duration-alt: .1s;
+$transition-timing: ease;

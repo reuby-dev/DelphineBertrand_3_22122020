@@ -11,3 +11,11 @@
     height: 100%;
     object-fit: cover;
 }
+
+//centrer un élément en absolute dont la taille est indéfinie
+
+.absolute-center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
