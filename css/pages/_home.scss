@@ -2,13 +2,13 @@
 
 .localisation {
     background-color: darken($grey, 5%);
-    padding: 20px;
+    padding: $padding-m;
     text-align: center;
 
     input {
         background-color: darken($grey, 5%);
         border: none;
-        margin-left: 10px;
+        margin-left: $margin-s;
         width: 110px; //width temporaire, pour la présentation de la maquette
         &::placeholder {
             color: black;

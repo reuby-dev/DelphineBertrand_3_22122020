@@ -9,9 +9,9 @@
 .menu {
     position: relative;
     z-index: 1;
-    margin-top: -40px;
+    margin-top: -$margin-l;
     background-color: $grey;
-    border-radius: 40px 40px 0 0;
+    border-radius: $border-radius-l $border-radius-l 0 0;
     padding: 35px $padding-m 85px $padding-m;
 }
 
@@ -21,19 +21,19 @@
 
 .menu__title-container {
     display: flex;
-    padding-right: 40px;
+    padding-right: $padding-l;
 }
 
 .menu__hilighted {
     width: 40px;
     border-bottom: solid 3px $tertiary-color;
-    margin-bottom: 15px;
+    margin-bottom: $margin-m;
 }
 
 .menu__main-container {
     display:flex;
     flex-wrap: wrap;
-    margin-right: -20px;
+    margin-right: -$margin-m;
 }
 
 .menu__dish-container {
@@ -41,7 +41,7 @@
 }
 
 .container-button {
-    margin-top: 50px;
+    margin-top: $margin-l;
     text-align: center;
 }
 
@@ -50,7 +50,7 @@
 .menu__title-restaurant {
     font-family: $font-family-serif;
     letter-spacing: 0.05rem;
-    margin-bottom: 40px;
+    margin-bottom: $margin-l;
   }
   
   .menu__title {
