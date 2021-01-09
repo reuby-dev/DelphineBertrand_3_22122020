@@ -13,6 +13,12 @@ $tertiary-color: $morning-glory;
 $grey: rgb(246,246,246);
 $grey-icon: rgb(126,126,126);
 
+//shadow
+$net-shadow: 0 2px 5px rgb(170, 170, 170);
+$blur-shadow: 0 10px 10px rgb(230, 230, 230);
+$dark-shadow: 0 5px 15px rgb(170, 170, 170);
+$very-dark-shadow: 0 5px 15px rgb(120, 120, 120);
+
 //typography
 
 $font-family-sans-serif: 'Roboto', Helvetica, Arial, sans-serif;
@@ -23,30 +29,7 @@ $font-weight-light: 300;
 $font-weight-regular: 400;
 $font-weight-bold: 700;
 
-//shadow
-$net-shadow: 0 2px 5px rgb(170, 170, 170);
-$blur-shadow: 0 10px 10px rgb(230, 230, 230);
-$dark-shadow: 0 5px 15px rgb(170, 170, 170);
-$very-dark-shadow: 0 5px 15px rgb(120, 120, 120);
-
-//step round size
-$step__round-size: 25px;
-
-//TYPOGRAPHY
-$main-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-
-$main-weight: 300;
-$bold-weight: 500;
-
-$line-height: 1.5em;
-$line-height-alt: 1.2em;
-
-$size-xs: 0.5em;
-$size-s: 0.85em;
-$size-m: 16px;
-$size-l: 1.1em;
-
-//SPACING
+//spacing
 $margin-xs: 5px;
 $margin-s: 10px;
 $margin-m: 20px;
@@ -59,8 +42,7 @@ $padding-m: 20px;
 $padding-l: 40px;
 $padding-xl: 80px;
 
-
-//BORDERS RADIUS
+//border-radius
 
 $border-radius-xs: 5px;
 $border-radius-s: 10px;
@@ -68,7 +50,5 @@ $border-radius-m: 20px;
 $border-radius-l: 40px;
 $border-radius-xl: 80px;
 
-//ANIMATIONS
-$transition-duration: .3s;
-$transition-duration-alt: .1s;
-$transition-timing: ease;
+//step round size
+$step__round-size: 25px;
