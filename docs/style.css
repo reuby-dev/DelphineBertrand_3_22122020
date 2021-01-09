@@ -649,12 +649,12 @@ body {
 }
 
 .card {
+  display: flex;
   flex-grow: 1;
   flex-basis: 0;
   background-color: white;
   border-radius: 20px;
   overflow: hidden;
-  min-width: 230px;
   height: 250px;
   margin: 0 20px 20px 0;
   box-shadow: 0 10px 10px #e6e6e6;
@@ -688,6 +688,12 @@ body {
 }
 
 .card__text {
+  max-width: 80%;
+}
+
+.card__text > * {
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
@@ -698,7 +704,6 @@ body {
 }
 
 .card--fit {
-  display: flex;
   animation: gradual-onset 1s ease-in-out 0s forwards;
   height: auto;
   opacity: 0;
@@ -717,7 +722,6 @@ body {
 .card--fit:hover .card__check {
   display: flex;
   background: #99E2D0;
-  width: 0;
   animation: check-box 0.5s ease-in-out 0s forwards;
 }
 .card--fit:hover .card__check .fa-check-circle {
@@ -809,6 +813,7 @@ body {
 
 .menu__dish-container {
   flex-grow: 1;
+  flex-basis: 0;
 }
 
 .container-button {

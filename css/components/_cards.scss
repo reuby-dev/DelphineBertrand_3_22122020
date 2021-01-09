@@ -1,12 +1,13 @@
+
 //card restaurant
 
 .card {
+    display: flex;
     flex-grow: 1;
     flex-basis: 0;
     background-color: white;
     border-radius: $border-radius-m;
     overflow: hidden;
-    min-width: 230px;
     height: 250px;
     margin: 0 $margin-m $margin-m 0;
     box-shadow: $blur-shadow; 
@@ -45,6 +46,12 @@
 }
 
 .card__text {
+    max-width: 80%;
+}
+
+.card__text > * {
+    white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
 }
 
@@ -57,7 +64,6 @@
 }
 
 .card--fit {
-    display: flex;
     @include animation(gradual-onset, 1s, $fill-mode:forwards);
     height: auto;
     opacity: 0; //permet d'apparaitre lors de l'animation
@@ -81,7 +87,6 @@
             .card__check{
             display: flex;
             background: $tertiary-color;
-            width: 0;
             @include animation(check-box, 0.5s, $fill-mode:forwards);
 
             .fa-check-circle {
@@ -98,5 +103,4 @@
 .card--fit:nth-child(5) {
     animation-delay: 1s;
 }
-
 
