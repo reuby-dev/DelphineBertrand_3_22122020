@@ -505,7 +505,7 @@ body {
 }
 .loader__container .loader__item {
   font-family: "Shrikhand", Georgia, serif;
-  font-size: 60px;
+  font-size: 4rem;
   margin: 10px;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   -webkit-background-clip: text;
@@ -658,7 +658,7 @@ body {
   height: 250px;
   margin: 0 20px 20px 0;
   box-shadow: 0 10px 10px #e6e6e6;
-  min-width: 230px;
+  min-width: 240px;
   cursor: pointer;
   transition: box-shadow 1s ease-out;
 }
