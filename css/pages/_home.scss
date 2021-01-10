@@ -33,7 +33,7 @@
 
 .function {
     @extend .max-container;
-    padding: $padding-l 0;
+    padding: $padding-l $padding-m;
 
     &__container {
         display: flex;
