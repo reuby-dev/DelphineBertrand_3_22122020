@@ -48,16 +48,6 @@
   transform: rotate(0);
   transition: transform 0.5s ease-in-out;
 }
-  
-.card-dish:hover  {
-   .card-dish__check {
-      margin-right: -20px;
-    }
-
-    .fa-check-circle {
-      transform: rotate(1turn);
-    }
-}
 
 .card-dish:nth-child(3) {
     animation-delay: 0.5s;
@@ -71,6 +61,19 @@
 .card-dish:nth-child(5) {
     animation-delay: 1.5s;
 }
+  
+.card-dish:hover  {
+
+   .card-dish__check {
+        margin-right: -20px;
+    }
+
+    .fa-check-circle {
+        transform: rotate(1turn);
+    }
+}
+
+
 
 /*
 
