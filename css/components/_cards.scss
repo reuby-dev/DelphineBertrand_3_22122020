@@ -1,30 +1,15 @@
-.card-command {
-    display: flex;
-    background: white;
-    padding: 20px;
-    border-radius: $border-radius-m;
-    min-width: ;
-}
-
-.card-command__price {
-    font-weight: $font-weight-bold;
-    margin-left: auto;
-    align-self: flex-end;
-}
-
-/*
 //card restaurant
 
 .card {
-    display: flex;
     flex-grow: 1;
     flex-basis: 0;
     background-color: white;
-    border-radius: $border-radius-m;
+    border-radius: 15px;
     overflow: hidden;
+    min-width: 230px;
     height: 250px;
-    box-shadow: $blur-shadow;
-    min-width: 240px;
+    margin: 0 20px 20px 0;
+    box-shadow: $blur-shadow; 
     cursor: pointer;
     transition: box-shadow 1s ease-out;
 
@@ -49,23 +34,17 @@
     background: $tertiary-color;
     color: darken($tertiary-color, 45%);
     text-align: center;
-    padding: $padding-s 15px;
-    border-radius: $border-radius-xs;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 
 .card__body {
     display: flex;
     flex-grow: 1;
-    padding: $padding-m;  
+    padding: 20px;  
 }
 
 .card__text {
-    max-width: 80%;
-}
-
-.card__text > * {
-    white-space: nowrap;
-    overflow: hidden;
     text-overflow: ellipsis;
 }
 
@@ -78,7 +57,8 @@
 }
 
 .card--fit {
-    @include animation(gradual-onset, 1s, $fill-mode:forwards);
+    display: flex;
+    animation: gradual-onset 1s ease-in-out forwards;
     height: auto;
     opacity: 0; //permet d'apparaitre lors de l'animation
 
@@ -88,7 +68,9 @@
 
         .card__icon-container {
             position: absolute;
-            @extend .absolute-center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
         .fa-check-circle {
@@ -101,10 +83,11 @@
             .card__check{
             display: flex;
             background: $tertiary-color;
-            @include animation(check-box, 0.5s, $fill-mode:forwards);
+            width: 0;
+            animation: plate-selection 0.5s ease-in-out forwards;
 
             .fa-check-circle {
-                @include animation (rotation, 0.5s);
+                animation: rotation 0.5s ease-in-out;
             }
         }
     }
@@ -118,4 +101,4 @@
     animation-delay: 1s;
 }
 
-*/
+

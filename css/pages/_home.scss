@@ -2,13 +2,13 @@
 
 .localisation {
     background-color: darken($grey, 5%);
-    padding: $padding-m;
+    padding: 20px;
     text-align: center;
 
     input {
         background-color: darken($grey, 5%);
         border: none;
-        margin-left: $margin-s;
+        margin-left: 10px;
         width: 110px; //width temporaire, pour la présentation de la maquette
         &::placeholder {
             color: black;
@@ -20,7 +20,7 @@
 
 .presentation {
     background-color: $grey;
-    padding: $padding-l $padding-m;
+    padding: $padding-t-b $padding-l-r;
     text-align: center;
 
     &__text {
@@ -33,12 +33,13 @@
 
 .function {
     @extend .max-container;
-    padding: $padding-l $padding-m;
+    padding-top: $padding-t-b;
+    padding-bottom: $padding-t-b;
 
     &__container {
         display: flex;
         flex-wrap: wrap;
-        margin-right: -$margin-m;
+        margin-right: -$margin-r;
     }
 }
 
@@ -46,7 +47,7 @@
 
 .restaurant {
     background-color: $grey;
-    padding: $padding-l 0;
+    padding: $padding-t-b 0;
 
     &__container {
         @extend .max-container;
@@ -55,7 +56,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            margin-right: -$margin-m;
+            margin-right: -$margin-r;
         }
     } 
 }

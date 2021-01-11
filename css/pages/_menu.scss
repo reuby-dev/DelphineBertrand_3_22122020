@@ -9,10 +9,10 @@
 .menu {
     position: relative;
     z-index: 1;
-    margin-top: -$margin-l;
+    margin-top: -40px;
     background-color: $grey;
-    border-radius: $border-radius-l $border-radius-l 0 0;
-    padding: 35px $padding-m 85px $padding-m;
+    border-radius: 40px 40px 0 0;
+    padding: 35px $padding-l-r 85px $padding-l-r;
 }
 
 .menu__max-container {
@@ -21,28 +21,27 @@
 
 .menu__title-container {
     display: flex;
-    padding-right: $padding-l;
+    padding-right: 40px;
 }
 
-.menu__dish-container {
-    display: flex;
+.menu__hilighted {
+    width: 40px;
+    border-bottom: solid 3px $tertiary-color;
+    margin-bottom: 15px;
+}
+
+.menu__main-container {
+    display:flex;
     flex-wrap: wrap;
     margin-right: -20px;
 }
 
-.menu__dish {
-    flex: 1;
-    margin-right: 20px;
+.menu__dish-container {
+    flex-grow: 1;
 }
-
-.menu__spacer {
-    width: 50px;
-    border-bottom: solid 4px $tertiary-color;
-}
-
 
 .container-button {
-    margin-top: $margin-l;
+    margin-top: 50px;
     text-align: center;
 }
 
@@ -51,7 +50,7 @@
 .menu__title-restaurant {
     font-family: $font-family-serif;
     letter-spacing: 0.05rem;
-    margin-bottom: $margin-l;
+    margin-bottom: 40px;
   }
   
   .menu__title {

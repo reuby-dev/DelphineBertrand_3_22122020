@@ -13,12 +13,6 @@ $tertiary-color: $morning-glory;
 $grey: rgb(246,246,246);
 $grey-icon: rgb(126,126,126);
 
-//shadow
-$net-shadow: 0 2px 5px rgb(170, 170, 170);
-$blur-shadow: 0 10px 10px rgb(230, 230, 230);
-$dark-shadow: 0 5px 15px rgb(170, 170, 170);
-$very-dark-shadow: 0 5px 15px rgb(120, 120, 120);
-
 //typography
 
 $font-family-sans-serif: 'Roboto', Helvetica, Arial, sans-serif;
@@ -29,26 +23,18 @@ $font-weight-light: 300;
 $font-weight-regular: 400;
 $font-weight-bold: 700;
 
-//spacing
-$margin-xs: 5px;
-$margin-s: 10px;
-$margin-m: 20px;
-$margin-l: 40px;
-$margin-xl: 80px;
-
-$padding-xs: 5px; 
-$padding-s: 10px;
-$padding-m: 20px;
-$padding-l: 40px;
-$padding-xl: 80px;
-
-//border-radius
-
-$border-radius-xs: 5px;
-$border-radius-s: 10px;
-$border-radius-m: 20px;
-$border-radius-l: 40px;
-$border-radius-xl: 80px;
+//shadow
+$net-shadow: 0 2px 5px rgb(170, 170, 170);
+$blur-shadow: 0 10px 10px rgb(230, 230, 230);
+$dark-shadow: 0 5px 15px rgb(170, 170, 170);
+$very-dark-shadow: 0 5px 15px rgb(120, 120, 120);
 
 //step round size
 $step__round-size: 25px;
+
+//padding
+$padding-l-r: 20px;
+$padding-t-b: 50px;
+
+//margin
+$margin-r: 20px;

@@ -2,9 +2,9 @@
 
 .button-active {
     position: relative;
-    padding: $padding-m;
+    padding: 20px;
     background: linear-gradient($secondary-color, $primary-color);
-    border-radius: $border-radius-l;
+    border-radius: 30px;
     box-shadow: $dark-shadow;
     transition: box-shadow 0.5s ease-out;
     
@@ -22,7 +22,7 @@
         right: 0;
         bottom: 0;
         left: 0;
-        border-radius: $border-radius-l;
+        border-radius: 30px;
         background: rgba(255, 255, 255, 0.15);
         transition: opacity 0.5s ease-out;
     }
@@ -33,7 +33,7 @@
 }
 
 .button-active--larger {
-    padding: $padding-m $padding-l;
+    padding: 20px 50px;
 }
 
 //bouton avec étapes
@@ -42,14 +42,12 @@
     flex-grow: 1;
     display: flex;
     position: relative;
-    padding: $padding-l;
+    padding: 30px;
     background-color: $grey;
-    border-radius: $border-radius-m;
-    margin: {
-        right: $margin-m;
-        bottom: $margin-m;
-        left: $step__round-size /2;
-    }
+    border-radius: 20px;
+    margin-right: $margin-r;
+    margin-bottom: 20px;
+    margin-left: $step__round-size /2;
     box-shadow: $blur-shadow;
     transition: box-shadow 0.5s ease-out;
     
@@ -73,7 +71,7 @@
     text-align: center;
     width: $step__round-size;
     height: $step__round-size;
-    border-radius: $border-radius-xl;
+    border-radius: 100%;
     background-color: $primary-color;
     color: white;
     line-height: $step__round-size;
@@ -100,5 +98,5 @@
 //Si une icone se trouve à côté d'un texte, alors ajouter 20px de margin left au texte
 
 .button-step__icon + .button-step__text {
-    margin-left: $margin-m;
+    margin-left: 20px;
 }
