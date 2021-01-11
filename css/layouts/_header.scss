@@ -8,13 +8,13 @@
     vertical-align: middle;
 
     &__container {
-        position:relative;
+        position: relative;
         @extend .max-container;
     }
     
     &__icon {
         position: absolute;
-        left: 20px;
+        left: 0;
         top: 50%;
         transform: translateY(-50%);
     }

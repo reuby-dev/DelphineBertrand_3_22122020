@@ -33,8 +33,7 @@
 
 .function {
     @extend .max-container;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 20px;
 
     &__container {
         display: flex;
@@ -47,7 +46,7 @@
 
 .restaurant {
     background-color: $grey;
-    padding: 50px 0;
+    padding: 50px 20px;
 
     &__container {
         @extend .max-container;
