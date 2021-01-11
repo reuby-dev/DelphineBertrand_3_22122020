@@ -639,23 +639,19 @@ p {
   animation: gradual-onset 1s ease-in-out forwards;
   opacity: 0;
 }
-
 .card-dish__text {
   overflow: hidden;
 }
-
 .card-dish__text > * {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 .card-dish__price {
   font-weight: 700;
   margin-left: auto;
   align-self: flex-end;
 }
-
 .card-dish__check {
   display: flex;
   align-items: center;
@@ -665,26 +661,21 @@ p {
   background: #99E2D0;
   transition: margin-right 0.5s ease-in-out;
 }
-
-.fa-check-circle {
+.card-dish .fa-check-circle {
   font-size: 30px;
   color: white;
   transform: rotate(0);
   transition: transform 0.5s ease-in-out;
 }
-
 .card-dish:nth-child(3) {
   animation-delay: 0.5s;
 }
-
 .card-dish:nth-child(4) {
   animation-delay: 1s;
 }
-
 .card-dish:nth-child(5) {
   animation-delay: 1.5s;
 }
-
 .card-dish:hover .card-dish__check {
   margin-right: -20px;
 }
@@ -706,15 +697,10 @@ p {
   cursor: pointer;
   transition: box-shadow 1s ease-out;
 }
-.card-restaurant:hover {
-  box-shadow: 0 5px 15px #787878;
-}
-
 .card-restaurant__figure {
   height: 66%;
   position: relative;
 }
-
 .card-restaurant__new {
   position: absolute;
   top: 15px;
@@ -725,11 +711,13 @@ p {
   padding: 10px 15px;
   border-radius: 5px;
 }
-
 .card-restaurant__body {
   display: flex;
   flex: 1;
   padding: 20px;
+}
+.card-restaurant:hover {
+  box-shadow: 0 5px 15px #787878;
 }
 
 .localisation {
