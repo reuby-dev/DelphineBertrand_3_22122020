@@ -6,7 +6,7 @@
   padding: 0 20px;
 }
 
-.img-size, .figure .figure__img {
+.img-size, .card-restaurant__img, .figure .figure__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -702,111 +702,46 @@ body {
   transform: rotate(1turn);
 }
 
-/*
-
-//card restaurant
-
-.card-dish {
-    flex-grow: 1;
-    flex-basis: 0;
-    background-color: white;
-    border-radius: 15px;
-    overflow: hidden;
-    min-width: 230px;
-    height: 250px;
-    margin: 0 20px 20px 0;
-    box-shadow: $blur-shadow; 
-    cursor: pointer;
-    transition: box-shadow 1s ease-out;
-
-    &:hover {
-        box-shadow: $dark-shadow;
-    }
-}
-
-.card-dish__figure {
-    height: 66%; //magic number
-    position: relative;
-}
-
-.card-dish__img {
-    @extend .img-size;
-}
-
-.card-dish__new {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background: $tertiary-color;
-    color: darken($tertiary-color, 45%);
-    text-align: center;
-    padding: 10px 15px;
-    border-radius: 5px;
-}
-
-.card-dish__body {
-    display: flex;
-    flex: 1;
-    padding: 20px;  
-}
-
-.card-dish__text {
-    max-width: 80%;
-}
-
-.card-dish__text > * {
-  white-space: nowrap;
+/*restaurant card*/
+.card-restaurant {
+  flex-grow: 1;
+  flex-basis: 0;
+  background-color: white;
+  border-radius: 15px;
   overflow: hidden;
-  text-overflow: ellipsis;
+  min-width: 220px;
+  height: 250px;
+  margin: 0 20px 20px 0;
+  box-shadow: 0 10px 10px #e6e6e6;
+  cursor: pointer;
+  transition: box-shadow 1s ease-out;
+}
+.card-restaurant:hover {
+  box-shadow: 0 5px 15px #787878;
 }
 
-//carte restaurant pour la page de menu
-
-.card-dish__price {
-    font-weight: $font-weight-bold;
-    margin-left: auto;
-    align-self: flex-end;
+.card-restaurant__figure {
+  height: 66%;
+  position: relative;
 }
 
-.card-dish--fit {
-    display: flex;
-    animation: gradual-onset 1s ease-in-out forwards;
-    height: auto;
-    opacity: 0; //permet d'apparaitre lors de l'animation
-
-    .card-dish__check{
-        position: relative;
-        display: none; //permet d'apparaitre lors de l'animation
-
-        .card-dish__icon-container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .fa-check-circle {
-            font-size: 30px;
-            color: white;
-        }
-    }
-
-    &:hover {
-            .card-dish__check{
-            display: flex;
-            background: $tertiary-color;
-            width: 0;
-            animation: plate-selection 0.5s ease-in-out forwards;
-
-            .fa-check-circle {
-                animation: rotation 0.5s ease-in-out;
-            }
-        }
-    }
+.card-restaurant__new {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #99E2D0;
+  color: #217460;
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 5px;
 }
 
+.card-restaurant__body {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+}
 
-*/
 .localisation {
   background-color: #e9e9e9;
   padding: 20px;

@@ -73,19 +73,15 @@
     }
 }
 
+/*restaurant card*/
 
-
-/*
-
-//card restaurant
-
-.card-dish {
+.card-restaurant {
     flex-grow: 1;
     flex-basis: 0;
     background-color: white;
     border-radius: 15px;
     overflow: hidden;
-    min-width: 230px;
+    min-width: 220px;
     height: 250px;
     margin: 0 20px 20px 0;
     box-shadow: $blur-shadow; 
@@ -93,20 +89,20 @@
     transition: box-shadow 1s ease-out;
 
     &:hover {
-        box-shadow: $dark-shadow;
+        box-shadow: $very-dark-shadow;
     }
 }
 
-.card-dish__figure {
+.card-restaurant__figure {
     height: 66%; //magic number
     position: relative;
 }
 
-.card-dish__img {
+.card-restaurant__img {
     @extend .img-size;
 }
 
-.card-dish__new {
+.card-restaurant__new {
     position: absolute;
     top: 15px;
     right: 15px;
@@ -117,67 +113,9 @@
     border-radius: 5px;
 }
 
-.card-dish__body {
+.card-restaurant__body {
     display: flex;
     flex: 1;
     padding: 20px;  
 }
-
-.card-dish__text {
-    max-width: 80%;
-}
-
-.card-dish__text > * {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-//carte restaurant pour la page de menu
-
-.card-dish__price {
-    font-weight: $font-weight-bold;
-    margin-left: auto;
-    align-self: flex-end;
-}
-
-.card-dish--fit {
-    display: flex;
-    animation: gradual-onset 1s ease-in-out forwards;
-    height: auto;
-    opacity: 0; //permet d'apparaitre lors de l'animation
-
-    .card-dish__check{
-        position: relative;
-        display: none; //permet d'apparaitre lors de l'animation
-
-        .card-dish__icon-container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .fa-check-circle {
-            font-size: 30px;
-            color: white;
-        }
-    }
-
-    &:hover {
-            .card-dish__check{
-            display: flex;
-            background: $tertiary-color;
-            width: 0;
-            animation: plate-selection 0.5s ease-in-out forwards;
-
-            .fa-check-circle {
-                animation: rotation 0.5s ease-in-out;
-            }
-        }
-    }
-}
-
-
-*/
 
