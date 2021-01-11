@@ -11,8 +11,8 @@
     box-shadow: $blur-shadow;
     border-radius: 15px;
     margin-bottom: 15px;
-    animation: gradual-onset 1s ease-in-out forwards;
     opacity: 0; //permet d'apparaitre lors de l'animation
+    @include animation(gradual-onset, 1s, $fill-mode:forwards);
 
     &__text {
         overflow: hidden; //permet à la card de conserver sa taille et à ellipsis de s'appliquer
@@ -31,21 +31,20 @@
     }
       
     &__check {
-    
       display: flex;
       align-items: center;
       justify-content: center;
       width: 100px;
       margin: -20px -120px -20px 20px ;
       background: $tertiary-color;
-      transition: margin-right 0.5s ease-in-out;
+      @include transition(margin-right);
     }
       
     .fa-check-circle {
       font-size: 30px;
       color: white;
       transform: rotate(0);
-      transition: transform 0.5s ease-in-out;
+      @include transition(transform);
     }
 
     &:nth-child(3) {
@@ -86,7 +85,7 @@
     margin: 0 20px 20px 0;
     box-shadow: $blur-shadow; 
     cursor: pointer;
-    transition: box-shadow 1s ease-out;
+    @include transition(box-shadow, 1s);
 
     &__figure {
         height: 66%; //magic number

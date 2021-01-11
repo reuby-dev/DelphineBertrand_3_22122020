@@ -6,7 +6,7 @@
     background: linear-gradient($secondary-color, $primary-color);
     border-radius: 30px;
     box-shadow: $dark-shadow;
-    transition: box-shadow 0.5s ease-out;
+    @include transition(box-shadow, 0.5s);
     
     &:hover {
         box-shadow: $very-dark-shadow;
@@ -24,7 +24,7 @@
         left: 0;
         border-radius: 30px;
         background: rgba(255, 255, 255, 0.25);
-        transition: opacity 0.5s ease-out;
+        @include transition(opacity);
     }
 
     &__text {
@@ -54,7 +54,7 @@
     margin-bottom: 20px;
     margin-left: $step__round-size /2;
     box-shadow: $blur-shadow;
-    transition: all 0.5s ease-in-out;
+    @include transition(all);
 
     &__round {
         position: absolute;
@@ -79,7 +79,7 @@
     &__icon {
         color: darken($grey,50%);
         align-self: center;
-        transition: color 0.5s ease-in-out;
+        @include transition(color);
         margin-right: 20px;
     }
     

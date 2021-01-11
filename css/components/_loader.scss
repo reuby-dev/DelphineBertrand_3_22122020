@@ -6,7 +6,7 @@
     height: 100%;
     background: rgba(255, 255, 255, 0.8);
     cursor: wait;
-    animation: loader-bg 2.5s;
+    @include animation(loader-bg, 2.5s);
 
     &__container {
         position: absolute;
@@ -23,6 +23,6 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke: 0;
-        animation: gradient-appear 2.5s ease-in-out;
+        @include animation(gradient-appear, 2.5s);
     }
 }

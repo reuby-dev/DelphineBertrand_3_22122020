@@ -1,11 +1,3 @@
-/*
-//padding
-$padding-l-r: 20px;
-$padding-t-b: 50px;
-
-//margin
-$margin-r: 20px;
-*/
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
 .max-container, .header__container, .footer__container, .function, .restaurant__container, .menu__max-container {
@@ -496,7 +488,7 @@ p {
   height: 100%;
   background: rgba(255, 255, 255, 0.8);
   cursor: wait;
-  animation: loader-bg 2.5s;
+  animation: loader-bg 2.5s ease-in-out 0s none;
 }
 .loader__container {
   position: absolute;
@@ -512,7 +504,7 @@ p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0;
-  animation: gradient-appear 2.5s ease-in-out;
+  animation: gradient-appear 2.5s ease-in-out 0s none;
 }
 
 .logo {
@@ -553,7 +545,7 @@ p {
   -webkit-background-clip: text;
   opacity: 0;
   transform: scale(0);
-  transition: .3s ease;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .heart--bg {
@@ -566,7 +558,7 @@ p {
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 30px;
   box-shadow: 0 5px 15px #aaaaaa;
-  transition: box-shadow 0.5s ease-out;
+  transition: box-shadow 0.5s ease-in-out 0s;
 }
 .button-active:hover {
   box-shadow: 0 5px 15px #787878;
@@ -584,7 +576,7 @@ p {
   left: 0;
   border-radius: 30px;
   background: rgba(255, 255, 255, 0.25);
-  transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-in-out 0s;
 }
 .button-active__text {
   color: white;
@@ -610,7 +602,7 @@ p {
   margin-bottom: 20px;
   margin-left: 12.5px;
   box-shadow: 0 10px 10px #e6e6e6;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out 0s;
 }
 .button-step__round {
   position: absolute;
@@ -633,7 +625,7 @@ p {
 .button-step__icon {
   color: #777777;
   align-self: center;
-  transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out 0s;
   margin-right: 20px;
 }
 .button-step:hover {
@@ -656,8 +648,8 @@ p {
   box-shadow: 0 10px 10px #e6e6e6;
   border-radius: 15px;
   margin-bottom: 15px;
-  animation: gradual-onset 1s ease-in-out forwards;
   opacity: 0;
+  animation: gradual-onset 1s ease-in-out 0s forwards;
 }
 .card-dish__text {
   overflow: hidden;
@@ -679,13 +671,13 @@ p {
   width: 100px;
   margin: -20px -120px -20px 20px;
   background: #99E2D0;
-  transition: margin-right 0.5s ease-in-out;
+  transition: margin-right 0.5s ease-in-out 0s;
 }
 .card-dish .fa-check-circle {
   font-size: 30px;
   color: white;
   transform: rotate(0);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out 0s;
 }
 .card-dish:nth-child(3) {
   animation-delay: 0.5s;
@@ -715,7 +707,7 @@ p {
   margin: 0 20px 20px 0;
   box-shadow: 0 10px 10px #e6e6e6;
   cursor: pointer;
-  transition: box-shadow 1s ease-out;
+  transition: box-shadow 1s ease-in-out 0s;
 }
 .card-restaurant__figure {
   height: 66%;
