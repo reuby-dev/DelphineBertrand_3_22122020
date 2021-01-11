@@ -592,14 +592,6 @@ p {
   box-shadow: 0 10px 10px #e6e6e6;
   transition: all 0.5s ease-in-out;
 }
-.button-step:hover {
-  background-color: #f2eafb;
-  box-shadow: 0 5px 15px #aaaaaa;
-}
-.button-step:hover .button-step__icon {
-  color: #9356DC;
-}
-
 .button-step__round {
   position: absolute;
   text-align: center;
@@ -612,22 +604,24 @@ p {
   left: -12.5px;
   top: calc(50% - 25px /2 );
 }
-
 .button-step__text {
   display: inline-block;
   font-weight: 700;
   line-height: 20px;
   vertical-align: middle;
 }
-
 .button-step__icon {
   color: #777777;
   align-self: center;
   transition: color 0.5s ease-in-out;
+  margin-right: 20px;
 }
-
-.button-step__icon + .button-step__text {
-  margin-left: 20px;
+.button-step:hover {
+  background-color: #f2eafb;
+  box-shadow: 0 5px 15px #aaaaaa;
+}
+.button-step:hover .button-step__icon {
+  color: #9356DC;
 }
 
 /*dish card*/
