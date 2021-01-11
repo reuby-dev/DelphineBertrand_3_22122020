@@ -6,6 +6,11 @@
     box-shadow: $net-shadow;
     background-color: white;
     vertical-align: middle;
+
+    &__container {
+        position:relative;
+        @extend .max-container;
+    }
     
     &__icon {
         position: absolute;
@@ -14,4 +19,3 @@
         transform: translateY(-50%);
     }
 }
-
