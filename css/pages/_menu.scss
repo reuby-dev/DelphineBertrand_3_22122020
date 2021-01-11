@@ -37,8 +37,10 @@
 }
 
 .menu__dish-container {
-    flex-grow: 1;
-    flex-basis: 0;
+    flex: 1;
+    min-width: 220px;
+    margin-right: 15px;
+    overflow: hidden; //permet à la card de conserver sa taille et à ellipsis de s'appliquer
 }
 
 .container-button {
