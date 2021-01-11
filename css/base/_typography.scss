@@ -32,3 +32,17 @@ h4 {
 p {
   margin: 0;
 }
+
+//typography comportement in menu page
+
+.menu__title-restaurant {
+  font-family: $font-family-serif;
+  letter-spacing: 0.05rem;
+  margin-bottom: 40px;
+}
+
+.menu__title {
+  font-weight: $font-weight-light;
+  text-transform: uppercase;
+  
+}

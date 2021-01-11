@@ -1,7 +1,7 @@
 .figure {
     height: 450px;
 
-    .figure__img {
+    &__img {
         @extend .img-size;
     }
 }
@@ -13,51 +13,32 @@
     background-color: $grey;
     border-radius: 40px 40px 0 0;
     padding: 35px $padding-l-r 85px $padding-l-r;
-}
 
-.menu__max-container {
-    @extend .max-container;
-}
-
-.menu__title-container {
-    display: flex;
-    padding-right: 40px;
-}
-
-.menu__hilighted {
-    width: 40px;
-    border-bottom: solid 3px $tertiary-color;
-    margin-bottom: 15px;
-}
-
-.menu__main-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -20px;
-}
-
-.menu__dish-container {
-    flex: 1;
-    min-width: 220px;
-    margin-right: 15px;
-    overflow: hidden; //permet à la card de conserver sa taille et à ellipsis de s'appliquer
-}
-
-.container-button {
-    margin-top: 50px;
-    text-align: center;
-}
-
-//typography comportement in menu page
-
-.menu__title-restaurant {
-    font-family: $font-family-serif;
-    letter-spacing: 0.05rem;
-    margin-bottom: 40px;
-  }
-  
-  .menu__title {
-    font-weight: $font-weight-light;
-    text-transform: uppercase;
+    &__max-container {
+        @extend .max-container;
+    }
     
-  }
+    &__title-container {
+        display: flex;
+        padding-right: 40px;
+    }
+    
+    &__hilighted {
+        width: 40px;
+        border-bottom: solid 3px $tertiary-color;
+        margin-bottom: 15px;
+    }
+    
+    &__main-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -20px;
+    }
+    
+    &__dish-container {
+        flex: 1;
+        min-width: 220px;
+        margin-right: 15px;
+        overflow: hidden; //permet à la card de conserver sa taille et à ellipsis de s'appliquer
+    }
+}
