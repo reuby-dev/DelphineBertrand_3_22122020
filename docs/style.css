@@ -567,7 +567,7 @@ body {
   background: rgba(255, 255, 255, 0.25);
   transition: opacity 0.5s ease-out;
 }
-.button-active .button-active__text {
+.button-active__text {
   color: white;
 }
 
@@ -586,19 +586,14 @@ body {
   margin-bottom: 20px;
   margin-left: 12.5px;
   box-shadow: 0 10px 10px #e6e6e6;
-  transition: box-shadow 0.5s ease-out;
+  transition: all 0.5s ease-in-out;
 }
 .button-step:hover {
-  background-color: #f9f9f9;
+  background-color: #f2eafb;
   box-shadow: 0 5px 15px #aaaaaa;
 }
-
-.button-step--active {
-  background-color: #f5edff;
-  transition-duration: 0.5s;
-}
-.button-step--active:hover {
-  background-color: #f8f2ff;
+.button-step:hover .button-step__icon {
+  color: #9356DC;
 }
 
 .button-step__round {
@@ -624,10 +619,7 @@ body {
 .button-step__icon {
   color: #777777;
   align-self: center;
-}
-
-.button-step__icon--active {
-  color: #9356DC;
+  transition: color 0.5s ease-in-out;
 }
 
 .button-step__icon + .button-step__text {
