@@ -31,13 +31,14 @@
 }
 
 .menu__main-container {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     margin-right: -20px;
 }
 
 .menu__dish-container {
     flex-grow: 1;
+    flex-basis: 0;
 }
 
 .container-button {

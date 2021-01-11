@@ -415,11 +415,9 @@ body {
 }
 @keyframes plate-selection {
   from {
-    transform: translateX(1);
     width: 0;
   }
   to {
-    transform: translateX(0);
     width: 20%;
   }
 }
@@ -680,11 +678,17 @@ body {
 
 .card__body {
   display: flex;
-  flex-grow: 1;
+  flex: 1;
   padding: 20px;
 }
 
 .card__text {
+  max-width: 80%;
+}
+
+.card__text > * {
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
@@ -810,6 +814,7 @@ body {
 
 .menu__dish-container {
   flex-grow: 1;
+  flex-basis: 0;
 }
 
 .container-button {
