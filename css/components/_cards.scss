@@ -1,4 +1,18 @@
+.card-command {
+    display: flex;
+    background: white;
+    padding: 20px;
+    border-radius: $border-radius-m;
+    min-width: ;
+}
 
+.card-command__price {
+    font-weight: $font-weight-bold;
+    margin-left: auto;
+    align-self: flex-end;
+}
+
+/*
 //card restaurant
 
 .card {
@@ -9,7 +23,6 @@
     border-radius: $border-radius-m;
     overflow: hidden;
     height: 250px;
-    margin: 0 $margin-m $margin-m 0;
     box-shadow: $blur-shadow;
     min-width: 240px;
     cursor: pointer;
@@ -105,3 +118,4 @@
     animation-delay: 1s;
 }
 
+*/

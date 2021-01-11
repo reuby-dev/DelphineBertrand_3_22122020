@@ -24,22 +24,22 @@
     padding-right: $padding-l;
 }
 
-.menu__hilighted {
-    width: 40px;
-    border-bottom: solid 3px $tertiary-color;
-    margin-bottom: $margin-m;
-}
-
-.menu__main-container {
-    display:flex;
-    flex-wrap: wrap;
-    margin-right: -$margin-m;
-}
-
 .menu__dish-container {
-    flex-grow: 1;
-    flex-basis: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -20px;
 }
+
+.menu__dish {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.menu__spacer {
+    width: 50px;
+    border-bottom: solid 4px $tertiary-color;
+}
+
 
 .container-button {
     margin-top: $margin-l;
