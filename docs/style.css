@@ -1,63 +1,840 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
+.max-container, .header__container, .footer__container, .function, .restaurant__container, .menu__max-container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.img-size, .card-restaurant__img, .figure .figure__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
 /*
-Error: File to import not found or unreadable: ./base/animation.
-        on line 18 of ./css/main.scss
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
 
-13: 
-14: //3. Base
-15: @import 
-16:     './base/base',
-17:     './base/typography',
-18:     './base/animation';
-19: 
-20: //4. Layout-related sections
-21: @import 
-22:     './layouts/header',
-23:     './layouts/footer';
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
 
-Backtrace:
-./css/main.scss:18
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:44:in `import'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:310:in `visit_import'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: ./base/animation.\A         on line 18 of ./css/main.scss\A \A 13: \A 14: //3. Base\A 15: @import \A 16:     './base/base',\A 17:     './base/typography',\A 18:     './base/animation';\A 19: \A 20: //4. Layout-related sections\A 21: @import \A 22:     './layouts/header',\A 23:     './layouts/footer';"; }
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 260px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+input, button {
+  outline: 0;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+h3, h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+p {
+  margin: 0;
+}
+
+@keyframes gradual-onset {
+  from {
+    opacity: 0;
+    transform: translateY(40%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes loader-bg {
+  0% {
+    visibility: visible;
+  }
+}
+@keyframes gradient-appear {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.header {
+  position: relative;
+  z-index: 1;
+  padding: 20px 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px #aaaaaa;
+  background-color: white;
+  vertical-align: middle;
+}
+.header__container {
+  position: relative;
+}
+.header__icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.footer {
+  background-color: #373737;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: white;
+}
+
+.footer__list {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.footer__icon {
+  margin-right: 10px;
+}
+
+.footer__icon--size {
+  font-size: 10px;
+}
+
+.footer__contact {
+  color: white;
+}
+
+.loader {
+  visibility: hidden;
+  position: fixed;
+  z-index: 500;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  cursor: wait;
+  animation: loader-bg 2.5s;
+}
+.loader__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loader__container .loader__item {
+  font-family: "Shrikhand", Georgia, serif;
+  font-size: 60px;
+  margin: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0;
+  animation: gradient-appear 2.5s ease-in-out;
+}
+
+.logo {
+  font-family: "Shrikhand", Georgia, serif;
+  font-size: 2rem;
+}
+
+.logo--lighter {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+}
+
+.heart {
+  font-size: 30px;
+  margin-left: auto;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  -webkit-text-stroke: 2px white;
+}
+.heart:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0px white;
+}
+.heart:hover .heart-color {
+  transform: scale(1);
+  opacity: 1;
+}
+.heart .heart-color {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  opacity: 0;
+  transform: scale(0);
+  transition: .3s ease;
+}
+
+.heart--bg {
+  -webkit-text-stroke: 2px #f6f6f6;
+}
+
+.button-active {
+  position: relative;
+  padding: 20px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 30px;
+  box-shadow: 0 5px 15px #aaaaaa;
+  transition: box-shadow 0.5s ease-out;
+}
+.button-active:hover {
+  box-shadow: 0 5px 15px #787878;
+}
+.button-active:hover::after {
+  opacity: 1;
+}
+.button-active::after {
+  content: "";
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.25);
+  transition: opacity 0.5s ease-out;
+}
+.button-active__text {
+  color: white;
+}
+
+.button-active--larger {
+  padding: 20px 50px;
+}
+
+.button-step {
+  flex-grow: 1;
+  display: flex;
+  position: relative;
+  padding: 30px;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 12.5px;
+  box-shadow: 0 10px 10px #e6e6e6;
+  transition: all 0.5s ease-in-out;
+}
+.button-step:hover {
+  background-color: #f2eafb;
+  box-shadow: 0 5px 15px #aaaaaa;
+}
+.button-step:hover .button-step__icon {
+  color: #9356DC;
+}
+
+.button-step__round {
+  position: absolute;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background-color: #9356DC;
+  color: white;
+  line-height: 25px;
+  left: -12.5px;
+  top: calc(50% - 25px /2 );
+}
+
+.button-step__text {
+  display: inline-block;
+  font-weight: 700;
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+.button-step__icon {
+  color: #777777;
+  align-self: center;
+  transition: color 0.5s ease-in-out;
+}
+
+.button-step__icon + .button-step__text {
+  margin-left: 20px;
+}
+
+/*dish card*/
+.card-dish {
+  display: flex;
+  flex: 1;
+  min-width: 220px;
+  padding: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  background: white;
+  box-shadow: 0 10px 10px #e6e6e6;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  animation: gradual-onset 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+.card-dish__text {
+  overflow: hidden;
+}
+
+.card-dish__text > * {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-dish__price {
+  font-weight: 700;
+  margin-left: auto;
+  align-self: flex-end;
+}
+
+.card-dish__check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  margin: -20px -120px -20px 20px;
+  background: #99E2D0;
+  transition: margin-right 0.5s ease-in-out;
+}
+
+.fa-check-circle {
+  font-size: 30px;
+  color: white;
+  transform: rotate(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.card-dish:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.card-dish:nth-child(4) {
+  animation-delay: 1s;
+}
+
+.card-dish:nth-child(5) {
+  animation-delay: 1.5s;
+}
+
+.card-dish:hover .card-dish__check {
+  margin-right: -20px;
+}
+.card-dish:hover .fa-check-circle {
+  transform: rotate(1turn);
+}
+
+/*restaurant card*/
+.card-restaurant {
+  flex-grow: 1;
+  flex-basis: 0;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  min-width: 220px;
+  height: 250px;
+  margin: 0 20px 20px 0;
+  box-shadow: 0 10px 10px #e6e6e6;
+  cursor: pointer;
+  transition: box-shadow 1s ease-out;
+}
+.card-restaurant:hover {
+  box-shadow: 0 5px 15px #787878;
+}
+
+.card-restaurant__figure {
+  height: 66%;
+  position: relative;
+}
+
+.card-restaurant__new {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #99E2D0;
+  color: #217460;
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.card-restaurant__body {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+}
+
+.localisation {
+  background-color: #e9e9e9;
+  padding: 20px;
+  text-align: center;
+}
+.localisation input {
+  background-color: #e9e9e9;
+  border: none;
+  margin-left: 10px;
+  width: 110px;
+}
+.localisation input::placeholder {
+  color: black;
+}
+
+.presentation {
+  background-color: #f6f6f6;
+  padding: 50px 20px;
+  text-align: center;
+}
+.presentation__text {
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.function {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.function__container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -20px;
+}
+
+.restaurant {
+  background-color: #f6f6f6;
+  padding: 50px 0;
+}
+.restaurant__container .restaurant__presentation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: -20px;
+}
+
+.figure {
+  height: 450px;
+}
+
+.menu {
+  position: relative;
+  z-index: 1;
+  margin-top: -40px;
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0 0;
+  padding: 35px 20px 85px 20px;
+}
+
+.menu__title-container {
+  display: flex;
+  padding-right: 40px;
+}
+
+.menu__hilighted {
+  width: 40px;
+  border-bottom: solid 3px #99E2D0;
+  margin-bottom: 15px;
+}
+
+.menu__main-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -20px;
+}
+
+.menu__dish-container {
+  flex: 1;
+  min-width: 220px;
+  margin-right: 15px;
+  overflow: hidden;
+}
+
+.container-button {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.menu__title-restaurant {
+  font-family: "Shrikhand", Georgia, serif;
+  letter-spacing: 0.05rem;
+  margin-bottom: 40px;
+}
+
+.menu__title {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=style.css.map */
