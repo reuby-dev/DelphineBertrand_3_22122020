@@ -7,21 +7,21 @@
     &__container {
         @extend .max-container;
     } 
-}
 
-.footer__list {
-    display: flex;
-    margin-bottom: 10px;
-}
-
-.footer__icon {
-    margin-right: 10px;
-}
-
-.footer__icon--size {
-    font-size: 10px;
-}
-
-.footer__contact {
-    color:white;
+    &__list {
+        display: flex;
+        margin-bottom: 10px;
+    }
+    
+    &__icon {
+        margin-right: 10px;
+    }
+    
+    &__icon--size {
+        font-size: 10px;
+    }
+    
+    &__contact {
+        color:white;
+    }
 }
