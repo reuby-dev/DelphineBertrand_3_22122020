@@ -1,3 +1,11 @@
+/*
+//padding
+$padding-l-r: 20px;
+$padding-t-b: 50px;
+
+//margin
+$margin-r: 20px;
+*/
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
 .max-container, .header__container, .footer__container, .function, .restaurant__container, .menu__max-container {
@@ -444,7 +452,7 @@ p {
 .header {
   position: relative;
   z-index: 1;
-  padding: 20px 20px;
+  padding: 20px;
   text-align: center;
   box-shadow: 0 2px 5px #aaaaaa;
   background-color: white;
@@ -618,7 +626,7 @@ p {
 }
 .button-step__text {
   display: inline-block;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 20px;
   vertical-align: middle;
 }
@@ -660,7 +668,7 @@ p {
   text-overflow: ellipsis;
 }
 .card-dish__price {
-  font-weight: 700;
+  font-weight: 800;
   margin-left: auto;
   align-self: flex-end;
 }
@@ -788,7 +796,7 @@ p {
   margin-top: -40px;
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
-  padding: 35px 20px 85px 20px;
+  padding: 35px 50px 85px 50px;
 }
 .menu__title-container {
   display: flex;

@@ -1,7 +1,7 @@
 .header {
     position: relative;
     z-index: 1;
-    padding: 20px $padding-l-r;
+    padding: 20px;
     text-align: center;
     box-shadow: $net-shadow;
     background-color: white;
@@ -14,7 +14,7 @@
     
     &__icon {
         position: absolute;
-        left: $padding-l-r;
+        left: 20px;
         top: 50%;
         transform: translateY(-50%);
     }
