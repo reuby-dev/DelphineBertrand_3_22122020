@@ -1,3 +1,34 @@
+//prefix
+@mixin prefix($property, $value, $vendors: webkit moz ms o) {
+	@if $vendors {
+	  @each $vendor in $vendors {
+		#{"-" + $vendor + "-" + $property}: #{$value};
+	  }
+	}
+	#{$property}: #{$value};
+}
+//how to use : @include prefix(transform, rotate(42deg), webkit ms);
+
+//Mediaqueries
+@mixin responsive($width) {
+	@if $width == wide-screens {
+		@media only screen and (max-width: $width-large) {
+			@content;
+		}
+	}
+	@else if $width == medium-screens {
+		@media only screen and (max-width: $width-medium) {
+			@content;
+		}
+	}
+	@else if $width == small-screens {
+		@media only screen and (max-width: $width-small) {
+			@content;
+		}
+	}
+}
+//how to use : @include responsive(wide-screens) { ... }
+
 //Transition
 @mixin transition($name, $duration:0.5s, $timing-function:ease-in-out, $delay:0s){
 	transition: $name $duration $timing-function $delay;
