@@ -2,8 +2,8 @@
 
 .localisation {
     background-color: darken($grey, 5%);
-    padding: 20px;
     text-align: center;
+    @include section-container(20px, $bottom:20px);
 
     input {
         background-color: darken($grey, 5%);
@@ -20,8 +20,8 @@
 
 .presentation {
     background-color: $grey;
-    padding: 50px 20px;
     text-align: center;
+    @include section-container;
 
     &__text {
         font-weight: $font-weight-light;
@@ -33,7 +33,7 @@
 
 .function {
     @extend .max-container;
-    padding: 50px 20px;
+    @include section-container;
 
     &__container {
         display: flex;
@@ -46,7 +46,7 @@
 
 .restaurant {
     background-color: $grey;
-    padding: 50px 20px;
+    @include section-container;
 
     &__container {
         @extend .max-container;

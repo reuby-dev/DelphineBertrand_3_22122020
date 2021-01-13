@@ -1,3 +1,18 @@
+//container des différentes sections (header, footer inclus) du site
+@mixin section-container($top:50px, $right:20px, $bottom:50px, $left:20px) {
+	padding: $top $right $bottom $right;
+}
+
+//Transition
+@mixin transition($name, $duration:0.5s, $timing-function:ease-in-out, $delay:0s){
+	transition: $name $duration $timing-function $delay;
+}
+
+//Animation
+@mixin animation($name, $duration, $timing-function:ease-in-out, $delay:0s, $fill-mode:none){
+	animation:$name $duration $timing-function $delay $fill-mode;
+}
+
 //prefix
 @mixin prefix($property, $value, $vendors: webkit moz ms o) {
 	@if $vendors {
@@ -28,13 +43,3 @@
 	}
 }
 //how to use : @include responsive(wide-screens) { ... }
-
-//Transition
-@mixin transition($name, $duration:0.5s, $timing-function:ease-in-out, $delay:0s){
-	transition: $name $duration $timing-function $delay;
-}
-
-//Animation
-@mixin animation($name, $duration, $timing-function:ease-in-out, $delay:0s, $fill-mode:none){
-	animation:$name $duration $timing-function $delay $fill-mode;
-}

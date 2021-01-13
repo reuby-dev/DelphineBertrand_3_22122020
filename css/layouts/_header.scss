@@ -1,11 +1,11 @@
 .header {
     position: relative;
     z-index: 1;
-    padding: 20px;
     text-align: center;
     box-shadow: $net-shadow;
     background-color: white;
     vertical-align: middle;
+    @include section-container(20px, $bottom:20px); 
 
     &__container {
         position: relative;

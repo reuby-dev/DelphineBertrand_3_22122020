@@ -1,6 +1,6 @@
 .footer {
     background-color: darken($grey, 75%);
-    padding: 30px 20px;
+    @include section-container(30px, $bottom:30px);
     color: white;
 
     &__container {
