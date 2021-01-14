@@ -13,17 +13,6 @@
 	animation:$name $duration $timing-function $delay $fill-mode;
 }
 
-//prefix
-@mixin prefix($property, $value, $vendors: webkit moz ms o) {
-	@if $vendors {
-	  @each $vendor in $vendors {
-		#{"-" + $vendor + "-" + $property}: #{$value};
-	  }
-	}
-	#{$property}: #{$value};
-}
-//how to use : @include prefix(transform, rotate(42deg), webkit ms);
-
 //Mediaqueries
 @mixin responsive($width) {
 	@if $width == wide-screens {
