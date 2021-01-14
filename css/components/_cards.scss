@@ -1,3 +1,51 @@
+/*restaurant card*/
+.card-restaurant {
+    flex-grow: 1;
+    flex-basis: 0;
+    background-color: white;
+    border-radius: $border-radius-m;
+    overflow: hidden;
+    min-width: 45%;
+    height: 250px;
+    margin: 0 20px 20px 0;
+    box-shadow: $blur-shadow; 
+    cursor: pointer;
+    @include transition(box-shadow, 0.5s);
+    @media screen and (max-width: 550px) {
+        min-width: 230px;  
+    }
+
+    &__figure {
+        height: 66%; //magic number
+        position: relative;
+    }
+    
+    &__img {
+        @extend .img-size;
+    }
+    
+    &__new {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: $tertiary-color;
+        color: darken($tertiary-color, 45%);
+        text-align: center;
+        padding: 10px 15px;
+        border-radius: $border-radius-xs;
+    }
+    
+    &__body {
+        display: flex;
+        flex: 1;
+        padding: 20px;  
+    }
+
+    &:hover {
+        box-shadow: $very-dark-shadow;
+    }
+}
+
 /*dish card*/
 .card-dish {
     display: flex;
@@ -11,6 +59,7 @@
     border-radius: $border-radius-m;
     margin-bottom: 15px;
     opacity: 0; //permet d'apparaitre lors de l'animation
+    @include transition(box-shadow);
     @include animation(gradual-onset, 1s, $fill-mode:forwards);
 
     &__text {
@@ -59,6 +108,7 @@
     }
 
     &:hover  {
+        box-shadow: $very-dark-shadow;
 
         .card-dish__check {
              margin-right: -20px;
@@ -68,49 +118,4 @@
              transform: rotate(1turn);
          }
      }   
-}
-
-/*restaurant card*/
-.card-restaurant {
-    flex-grow: 1;
-    flex-basis: 0;
-    background-color: white;
-    border-radius: $border-radius-m;
-    overflow: hidden;
-    min-width: 220px;
-    height: 250px;
-    margin: 0 20px 20px 0;
-    box-shadow: $blur-shadow; 
-    cursor: pointer;
-    @include transition(box-shadow, 1s);
-
-    &__figure {
-        height: 66%; //magic number
-        position: relative;
-    }
-    
-    &__img {
-        @extend .img-size;
-    }
-    
-    &__new {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        background: $tertiary-color;
-        color: darken($tertiary-color, 45%);
-        text-align: center;
-        padding: 10px 15px;
-        border-radius: $border-radius-xs;
-    }
-    
-    &__body {
-        display: flex;
-        flex: 1;
-        padding: 20px;  
-    }
-
-    &:hover {
-        box-shadow: $very-dark-shadow;
-    }
 }
