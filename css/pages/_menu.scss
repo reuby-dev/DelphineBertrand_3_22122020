@@ -20,7 +20,7 @@
     
     &__title-container {
         display: flex;
-        padding-right: 40px;
+        padding-right: 20px;
     }
     
     &__hilighted {
@@ -37,9 +37,12 @@
     
     &__dish-container {
         flex: 1;
-        min-width: 220px;
+        min-width: 340px;
         margin-right: 20px;
         margin-bottom: 20px;
-        overflow: hidden; //permet à la card de conserver sa taille et à ellipsis de s'appliquer
+
+        @include responsive(small-screen) { 
+            min-width: 270px;
+        }    
     }
 }

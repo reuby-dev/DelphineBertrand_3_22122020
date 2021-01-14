@@ -15,17 +15,17 @@
 
 //Mediaqueries
 @mixin responsive($width) {
-	@if $width == wide-screens {
+	@if $width == wide-screen {
 		@media only screen and (max-width: $width-large) {
 			@content;
 		}
 	}
-	@else if $width == medium-screens {
+	@else if $width == medium-screen {
 		@media only screen and (max-width: $width-medium) {
 			@content;
 		}
 	}
-	@else if $width == small-screens {
+	@else if $width == small-screen {
 		@media only screen and (max-width: $width-small) {
 			@content;
 		}
