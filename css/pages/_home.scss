@@ -8,8 +8,9 @@
     input {
         background-color: darken($grey, 5%);
         border: none;
+        font-weight: $font-weight-bold;
         margin-left: 10px;
-        width: 110px; //width temporaire, pour la présentation de la maquette
+        width: 115px; //width temporaire, pour la présentation de la maquette
         &::placeholder {
             color: black;
         }

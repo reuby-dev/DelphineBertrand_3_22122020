@@ -24,7 +24,7 @@
     }
     
     &__hilighted {
-        width: 40px;
+        width: 45px;
         border-bottom: solid 3px $tertiary-color;
         margin-bottom: 15px;
     }
@@ -33,6 +33,7 @@
         display: flex;
         flex-wrap: wrap;
         margin-right: -20px;
+        margin-bottom: 20px;
     }
     
     &__dish-container {

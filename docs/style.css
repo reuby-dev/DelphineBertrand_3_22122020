@@ -581,7 +581,6 @@ p {
 }
 
 .container-button {
-  margin-top: 50px;
   text-align: center;
 }
 
@@ -747,8 +746,9 @@ p {
 .localisation input {
   background-color: #e9e9e9;
   border: none;
+  font-weight: 800;
   margin-left: 10px;
-  width: 110px;
+  width: 115px;
 }
 .localisation input::placeholder {
   color: black;
@@ -801,7 +801,7 @@ p {
   padding-right: 20px;
 }
 .menu__hilighted {
-  width: 40px;
+  width: 45px;
   border-bottom: solid 3px #99E2D0;
   margin-bottom: 15px;
 }
@@ -809,6 +809,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   margin-right: -20px;
+  margin-bottom: 20px;
 }
 .menu__dish-container {
   flex: 1;
