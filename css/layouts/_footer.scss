@@ -1,28 +1,26 @@
 .footer {
     background-color: darken($grey, 75%);
-    padding-top: 30px;
-    padding-bottom: 30px;
+    @include section-container(30px, $bottom:30px);
     color: white;
 
     &__container {
         @extend .max-container;
+    } 
+
+    &__list {
+        display: flex;
+        margin-bottom: 10px;
     }
     
-}
-
-.footer__list {
-    display: flex;
-    margin-bottom: 10px;
-}
-
-.footer__icon {
-    margin-right: 10px;
-}
-
-.footer__icon--size {
-    font-size: 10px;
-}
-
-.footer__contact {
-    color:white;
+    &__icon {
+        margin-right: 10px;
+    }
+    
+    &__icon--size {
+        font-size: 10px;
+    }
+    
+    &__contact {
+        color:white;
+    }
 }

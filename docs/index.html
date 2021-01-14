@@ -13,9 +13,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <!--Favicon-->
     <link rel="icon" type="image/png" href="images/logo/favicon.png">
+    <!-- Open graph-->
+    <meta property="og:site_name" content="Oh my food" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://reuby-dev.github.io/DelphineBertrand_3_22122020/" />
+    <meta property="og:title" content="Choisissez votre menu avant d'arriver au restaurant - Oh my food" />
+    <meta property="og:image" content="https://ibb.cp/p3nnCdC" />
+    <meta property="og:description" content="Gagnez du temps : choisissez votre restaurant, composez votre menu, dégustez au restaurant" />
+
 </head>
 
 <body>
+    <div class="loader">
+        <div class="loader__container">
+            <div class="loader__item">ohmyfood</div>
+        </div>
+    </div>
+
     <header class="header">
         <a href="index.html">
             <div class="logo">ohmyfood</div>
@@ -40,18 +55,18 @@
         <h2>Fonctionnement</h2>
         <div class="function__container">
             <button class="button-step">
-                <div class="button-step__round">1</div>
+                <span class="button-step__round">1</span>
                 <i class="fas fa-mobile-alt fa-lg button-step__icon"></i>
                 <span class="button-step__text">Choisissez un restaurant</span>
             </button>
             <button class="button-step">
-                <div class="button-step__round">2</div>
+                <span class="button-step__round">2</span>
                 <i class="fas fa-list-ul fa-lg button-step__icon"></i>
                 <span class="button-step__text">Composez votre menu</span>
             </button>
-            <button class="button-step button-step--active">
-                <div class="button-step__round">3</div>
-                <i class="fas fa-store fa-lg button-step__icon button-step__icon--active"></i>
+            <button class="button-step">
+                <span class="button-step__round">3</span>
+                <i class="fas fa-store fa-lg button-step__icon"></i>
                 <span class="button-step__text">Dégustez au restaurant</span>
             </button>
         </div>
@@ -63,72 +78,82 @@
             <div class="restaurant__presentation">
 
                 <div class="card-restaurant">
-                    <a href="#">
+                    <a href="menu-la-palette-du-gout.html">
                         <div class="card-restaurant__figure">
-                            <img src="images/restaurants/la_palette_du_gout.jpg" alt="la palette du gout"
+                            <img src="images/restaurants/la_palette_du_gout.jpg" alt="restaurant la palette du gout"
                                 class="card-restaurant__img">
                             <div class="card-restaurant__new">Nouveau</div>
                         </div>
 
                         <div class="card-restaurant__body">
-                            <div class="card-restaurant__text">
-                                <h3>La palette du gout</h3>
+                            <div class="card__text">
+                                <h3>La palette du goût</h3>
                                 <p>Ménilmontant</p>
                             </div>
-                            <i class="far fa-heart card-restaurant__icon"></i>
+                            <i class="far fa-heart heart">
+                                <i class="fas fa-heart heart-color"></i>
+                            </i>
                         </div>
                     </a>
                 </div>
 
                 <div class="card-restaurant">
-                    <a href="#">
+                    <a href="menu-la-note-enchantee.html">
                         <div class="card-restaurant__figure">
-                            <img src="images/restaurants/la_note_enchantee.jpg" alt="la note enchantée"
+                            <img src="images/restaurants/la_note_enchantee.jpg" alt="restaurant la note enchantée"
                                 class="card-restaurant__img">
                             <div class="card-restaurant__new">Nouveau</div>
                         </div>
+
                         <div class="card-restaurant__body">
-                            <div class="card-restaurant__text">
+                            <div class="card__text">
                                 <h3>La note enchantée</h3>
                                 <p>Charonne</p>
                             </div>
-                            <i class="far fa-heart fa-2x card-restaurant__icon"></i>
+                            <i class="far fa-heart heart">
+                                <i class="fas fa-heart heart-color"></i>
+                            </i>
                         </div>
                     </a>
                 </div>
 
                 <div class="card-restaurant">
-                    <a href="#">
+                    <a href="menu-a-la-francaise.html">
                         <div class="card-restaurant__figure">
-                            <img src="images/restaurants/a_la_francaise.jpg" alt="a la francaise"
+                            <img src="images/restaurants/a_la_francaise.jpg" alt="restaurant à la française"
                                 class="card-restaurant__img">
                         </div>
+
                         <div class="card-restaurant__body">
-                            <div class="card-restaurant__text">
-                                <h3>A la française</h3>
+                            <div class="card__text">
+                                <h3>&Agrave; la française</h3>
                                 <p>Cité rouge</p>
                             </div>
-                            <i class="far fa-heart fa-2x card-restaurant__icon"></i>
+                            <i class="far fa-heart heart">
+                                <i class="fas fa-heart heart-color"></i>
+                            </i>
                         </div>
                     </a>
                 </div>
 
                 <div class="card-restaurant">
-                    <a href="#">
+                    <a href="menu-le-delice-des-sens.html">
                         <div class="card-restaurant__figure">
-                            <img src="images/restaurants/le_delice_des_sens.jpg" alt="le délice des sens"
+                            <img src="images/restaurants/le_delice_des_sens.jpg" alt="restaurant le délice des sens"
                                 class="card-restaurant__img">
                         </div>
+
                         <div class="card-restaurant__body">
-                            <div class="card-restaurant__text">
+                            <div class="card__text">
                                 <h3>Le délice des sens</h3>
                                 <p>Folie-Méricourt</p>
                             </div>
-                            <i class="far fa-heart fa-2x card-restaurant__icon"></i>
+                            <i class="far fa-heart heart">
+                                <i class="fas fa-heart heart-color"></i>
+                            </i>
                         </div>
                     </a>
                 </div>
-
             </div>
         </div>
     </section>
@@ -146,7 +171,7 @@
                     <p class="footer__text">Devenir partenaire</p>
                 </li>
                 <li class="footer__list">Mentions légales</li>
-                <li class="footer__list"><a href="mailto:adresse@serveur.com" class="footer__contact">Contact</li></a>
+                <li class="footer__list"><a href="mailto:adresse@serveur.com" class="footer__contact">Contact</a></li>
             </ul>
         </div>
     </footer>

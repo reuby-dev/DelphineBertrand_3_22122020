@@ -1,8 +1,4 @@
-// -----------------------------------------------------------------------------
-// This file contains very basic styles.
-// -----------------------------------------------------------------------------
-
-html {
+* {
     box-sizing: border-box;
   }
 
@@ -19,24 +15,6 @@ html {
   ul {
     list-style-type: none;
     padding: 0;
-  }
-
-  h1 {
-    margin-top:0;
-  }
-  
-  h2 {
-    margin-top: 0;
-    margin-bottom: 30px;
-  }
-  
-  h3 {
-    margin-top: 0;
-    margin-bottom: 5px;
-  }
-  
-  p {
-    margin: 0;
   }
   
   input, button {

@@ -13,14 +13,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <!--Favicon-->
     <link rel="icon" type="image/png" href="images/logo/favicon.png">
+    <!-- Open graph-->
+    <meta property="og:site_name" content="Oh my food" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://reuby-dev.github.io/DelphineBertrand_3_22122020/menu-a-la-francaise.html" />
+    <meta property="og:title" content="Choisissez votre menu avant d'arriver au restaurant - Oh my food" />
+    <meta property="og:image" content="https://ibb.cp/p3nnCdC" />
+    <meta property="og:description" content="Gagnez du temps : choisissez votre restaurant, composez votre menu, dégustez au restaurant" />
+
 </head>
 
 <body>
     <header class="header">
-        <a href="index.html">
-            <i class="fas fa-arrow-left fa-lg header__icon"></i>
-            <span class="logo">ohmyfood</div>
-        </a>
+        <div class="header__container">
+            <a href="index.html">
+                <i class="fas fa-arrow-left fa-lg header__icon"></i>
+                <span class="logo">ohmyfood </span>
+            </a>
+        </div>
     </header>
 
     <div class="figure">
@@ -28,141 +39,154 @@
     </div>
 
     <section class="menu">
-        <div class="menu__title-container">
-            <h1 class="menu__title-restaurant">&Agrave; la française</h1>
-            <i class="far fa-heart fa-2x card-restaurant__icon"></i>
-        </div>
+        <div class="menu__max-container">
+            <div class="menu__title-container">
+                <h1 class="menu__title-restaurant">&Agrave; la française</h1>
+                <i class="far fa-heart heart heart--bg">
+                    <i class="fas fa-heart heart-color"></i>
+                </i>
+            </div>
 
-        <div class="menu__main-container">
+            <div class="menu__main-container">
+                <div class="menu__dish-container">
+                    <h3 class="menu__title">Entrées</h3>
+                    <div class="menu__hilighted"></div>
 
-            <div class="menu__dish-container">
-                <h3 class="menu__title">Entrées</h3>
-                <div class="menu__hilighted"></div>
-
-                <div class="card-restaurant card-restaurant--fit">
-                    <a href="#">
-                        <div class="card-restaurant__body">
-                            <div class="card-restaurant__text">
-                                <h3>Tartare de poulpe acidulé</h3>
-                                <p>Aux zestes d'orange</p>
-                            </div>
-                            <p class="card-restaurant__price">25€</p>
+                    <div class="card-dish">
+                        <div class="card-dish__text">
+                            <h4>Tartare de pouple acidulé</h4>
+                            <p>Aux zests d'orange</p>
                         </div>
-                    </a>
+                        <p class="card-dish__price">25€</p>
+                        <div class="card-dish__check">
+                            <div class="card-dish__icon-container">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-dish">
+                        <div class="card-dish__text">
+                            <h4>Velouté de légumes d'antan</h4>
+                            <p>Carotte, panais, topinambour</p>
+                        </div>
+                        <p class="card-dish__price">35€</p>
+                        <div class="card-dish__check">
+                            <div class="card-dish__icon-container">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-dish">
+                        <div class="card-dish__text">
+                            <h4>Soupe à l'oignon</h4>
+                            <p>Revisitée</p>
+                        </div>
+                        <p class="card-dish__price">20€</p>
+                        <div class="card-dish__check">
+                            <div class="card-dish__icon-container">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="card-restaurant card-restaurant--fit">
-                    <a href="#">
-                        <div class="card-restaurant__body">
-                            <div class="card-restaurant__text">
-                                <h3>Velouté de légumes d'antan</h3>
-                                <p>Carotte, panais, topinambourg</p>
-                            </div>
-                            <p class="card-restaurant__price">35€</p>
+                <div class="menu__dish-container">
+                    <h3 class="menu__title">Plats</h3>
+                    <div class="menu__hilighted"></div>
+
+                    <div class="card-dish">
+                        <div class="card-dish__text">
+                            <h4>Coquilles Saint-Jacques</h4>
+                            <p>Accompagnées d'une purée de panais</p>
                         </div>
-                    </a>
+                        <p class="card-dish__price">40€</p>
+                        <div class="card-dish__check">
+                            <div class="card-dish__icon-container">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-dish">
+                        <div class="card-dish__text">
+                            <h4>Magret de canard</h4>
+                            <p>Et parmentier de pommes de terres</p>
+                        </div>
+                        <p class="card-dish__price">35€</p>
+                        <div class="card-dish__check">
+                            <div class="card-dish__icon-container">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-dish">
+                        <div class="card-dish__text">
+                            <h4>Pigeonneau d'Ille-et-Vilaine</h4>
+                            <p>Sur son lit de gnocchis aux légumes</p>
+                        </div>
+                        <p class="card-dish__price">44€</p>
+                        <div class="card-dish__check">
+                            <div class="card-dish__icon-container">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="card-restaurant card-restaurant--fit">
-                    <a href="#">
-                        <div class="card-restaurant__body">
-                            <div class="card-restaurant__text">
-                                <h3>Soupe à l'oignon</h3>
-                                <p>Revisitée</p>
-                            </div>
-                            <p class="card-restaurant__price">20€</p>
+                <div class="menu__dish-container">
+                    <h3 class="menu__title">Desserts</h3>
+                    <div class="menu__hilighted"></div>
+
+                    <div class="card-dish">
+                        <div class="card-dish__text">
+                            <h4>Pétales de violettes glacés</h4>
+                            <p>Et purée de noisettes</p>
                         </div>
-                    </a>
+                        <p class="card-dish__price">18€</p>
+                        <div class="card-dish__check">
+                            <div class="card-dish__icon-container">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-dish">
+                        <div class="card-dish__text">
+                            <h4>Fondant au chocolat</h4>
+                            <p>Revisité</p>
+                        </div>
+                        <p class="card-dish__price">22€</p>
+                        <div class="card-dish__check">
+                            <div class="card-dish__icon-container">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-dish">
+                        <div class="card-dish__text">
+                            <h4>Millefeuille croustillant</h4>
+                            <p>Myrtilles et pâte d'amande</p>
+                        </div>
+                        <p class="card-dish__price">23€</p>
+                        <div class="card-dish__check">
+                            <div class="card-dish__icon-container">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-            <div class="menu__dish-container">
-                <h3 class="menu__title">Plats</h3>
-                <div class="menu__hilighted"></div>
-
-                <div class="card-restaurant card-restaurant--fit">
-                    <a href="#">
-                        <div class="card-restaurant__body">
-                            <div class="card-restaurant__text">
-                                <h3>Coquilles Saint-Jacques</h3>
-                                <p>Accompagnées d'une purée de panais</p>
-                            </div>
-                            <p class="card-restaurant__price">40€</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="card-restaurant card-restaurant--fit">
-                    <a href="#">
-                        <div class="card-restaurant__body">
-                            <div class="card-restaurant__text">
-                                <h3>Magret de canard</h3>
-                                <p>Et parmentier de pommes de terres</p>
-                            </div>
-                            <p class="card-restaurant__price">35€</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="card-restaurant card-restaurant--fit">
-                    <a href="#">
-                        <div class="card-restaurant__body">
-                            <div class="card-restaurant__text">
-                                <h3>Pigeonneau d'Ille-et-Vilaine</h3>
-                                <p>Sur son lit de gnocchis aux légumes</p>
-                            </div>
-                            <p class="card-restaurant__price">44€</p>
-                        </div>
-                    </a>
-                </div>
+            <div class="container-button">
+                <button class="button-active button-active--larger">
+                    <span class="button-active__text">Commander</span>
+                </button>
             </div>
-
-            <div class="menu__dish-container">
-                <h3 class="menu__title">Desserts</h3>
-                <div class="menu__hilighted"></div>
-
-                <div class="card-restaurant card-restaurant--fit">
-                    <a href="#">
-                        <div class="card-restaurant__body">
-                            <div class="card-restaurant__text">
-                                <h3>Pétales de violettes glacés</h3>
-                                <p>Et purée de noisettes</p>
-                            </div>
-                            <p class="card-restaurant__price">18€</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="card-restaurant card-restaurant--fit">
-                    <a href="#">
-                        <div class="card-restaurant__body">
-                            <div class="card-restaurant__text">
-                                <h3>Fondant au chocolat</h3>
-                                <p>Revisité</p>
-                            </div>
-                            <p class="card-restaurant__price">22€</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="card-restaurant card-restaurant--fit">
-                    <a href="#">
-                        <div class="card-restaurant__body">
-                            <div class="card-restaurant__text">
-                                <h3>Millefeuille croustillant</h3>
-                                <p>Myrtilles et pâte d'amande</p>
-                            </div>
-                            <p class="card-restaurant__price">23€</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-button">
-            <button class="button-active button-active--larger">
-                <span class="button-active__text">Commander</span>
-            </button>
         </div>
 
     </section>
@@ -180,7 +204,7 @@
                     <p class="footer__text">Devenir partenaire</p>
                 </li>
                 <li class="footer__list">Mentions légales</li>
-                <li class="footer__list"><a href="mailto:adresse@serveur.com" class="footer__contact">Contact</li></a>
+                <li class="footer__list"><a href="mailto:adresse@serveur.com" class="footer__contact">Contact</a></li>
             </ul>
         </div>
     </footer>

@@ -1,0 +1,25 @@
+@keyframes gradual-onset {
+    from {
+        opacity:0;
+        transform: translateY(40%);
+    }
+    to {
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes loader-bg {
+    0% {
+        visibility:visible;
+    }
+}
+
+@keyframes gradient-appear {
+    from { 
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
