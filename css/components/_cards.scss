@@ -107,6 +107,10 @@
         animation-delay: 1.5s;
     }
 
+    &:nth-child(6) {
+        animation-delay: 2s;
+    }
+
     &:hover  {
         box-shadow: $very-dark-shadow;
 

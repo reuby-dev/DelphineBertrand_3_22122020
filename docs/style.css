@@ -728,6 +728,9 @@ p {
 .card-dish:nth-child(5) {
   animation-delay: 1.5s;
 }
+.card-dish:nth-child(6) {
+  animation-delay: 2s;
+}
 .card-dish:hover {
   box-shadow: 0 5px 15px #787878;
 }
