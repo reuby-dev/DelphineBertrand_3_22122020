@@ -1,6 +1,6 @@
 //container des différentes sections (header, footer inclus) du site
 @mixin section-container($top:50px, $right:20px, $bottom:50px, $left:20px) {
-	padding: $top $right $bottom $right;
+	padding: $top $right $bottom $left;
 }
 
 //Transition
