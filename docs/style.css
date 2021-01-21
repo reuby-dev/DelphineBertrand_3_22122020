@@ -419,7 +419,6 @@ p {
 
 @keyframes gradual-onset {
   from {
-    opacity: 0;
     transform: translateY(40%);
   }
   to {
