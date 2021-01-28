@@ -11,6 +11,28 @@
   object-fit: cover;
 }
 
+@keyframes gradual-onset {
+  from {
+    transform: translateY(40%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes loader-bg {
+  0% {
+    visibility: visible;
+  }
+}
+@keyframes gradient-appear {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -417,28 +439,6 @@ p {
   text-transform: uppercase;
 }
 
-@keyframes gradual-onset {
-  from {
-    transform: translateY(40%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes loader-bg {
-  0% {
-    visibility: visible;
-  }
-}
-@keyframes gradient-appear {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
 .header {
   position: relative;
   z-index: 1;
